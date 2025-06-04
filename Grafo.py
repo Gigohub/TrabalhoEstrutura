@@ -6,14 +6,18 @@ import matplotlib.pyplot as plt
 # Carregar dados
 data = pd.read_csv('energydata_complete.csv')
 
-# Selecionar apenas as variáveis numéricas relevantes
+# Selecionar variáveis numéricas
 features = data.select_dtypes(include=[np.number])
 
 # Matriz de correlação
 corr_matrix = features.corr()
 
-# Threshold mais baixo para conexões mais densas
-threshold = 0.3
+# Threshold ajustável pelo usuário
+try:
+    threshold = float(input("Informe o threshold para correlação (ex.: 0.3): ") or 0.3)
+except ValueError:
+    print("❌ Threshold inválido. Usando padrão de 0.3.")
+    threshold = 0.3
 
 # Criar grafo
 G = nx.Graph()
@@ -39,11 +43,12 @@ def node_color(node):
 for col in corr_matrix.columns:
     G.add_node(col, color=node_color(col))
 
-# Adicionar arestas com base no threshold
-for i in corr_matrix.columns:
-    for j in corr_matrix.columns:
-        if i != j and abs(corr_matrix.loc[i, j]) >= threshold:
-            G.add_edge(i, j, weight=corr_matrix.loc[i, j])
+# Loop otimizado: triangular superior da matriz
+for i, var1 in enumerate(corr_matrix.columns):
+    for var2 in corr_matrix.columns[i+1:]:
+        weight = corr_matrix.loc[var1, var2]
+        if abs(weight) >= threshold:
+            G.add_edge(var1, var2, weight=weight)
 
 # Plotar
 plt.figure(figsize=(12, 12))
@@ -51,17 +56,23 @@ plt.figure(figsize=(12, 12))
 # Layout
 pos = nx.spring_layout(G, k=0.5, seed=42)
 
-# Extrair cores dos nós
+# Cores dos nós
 node_colors = [attr['color'] for _, attr in G.nodes(data=True)]
 
+# Tamanho do nó proporcional ao grau
+node_sizes = [300 + 100 * G.degree(n) for n in G.nodes()]
+
+# Largura da aresta proporcional à força da correlação
+edge_widths = [abs(G[u][v]['weight']) * 3 for u, v in G.edges()]
+
 # Desenhar grafo
-nx.draw_networkx_nodes(G, pos, node_color=node_colors, alpha=0.8, node_size=500)
-nx.draw_networkx_edges(G, pos, alpha=0.5)
+nx.draw_networkx_nodes(G, pos, node_color=node_colors, alpha=0.8, node_size=node_sizes)
+nx.draw_networkx_edges(G, pos, alpha=0.5, width=edge_widths)
 nx.draw_networkx_labels(G, pos, font_size=8)
 
-plt.title('Grafo de Correlação entre Variáveis (Threshold ≥ 0.3)', fontsize=14)
+plt.title(f'Grafo de Correlação entre Variáveis (Threshold ≥ {threshold})', fontsize=14)
 plt.axis('off')
 
-# Salvar figura ao invés de mostrar
+# Salvar figura
 plt.savefig('grafo_correlacao_categorias.png')
-print("✅ Grafo salvo como 'grafo_correlacao_categorias.png'.")
+print(f"✅ Grafo salvo como 'grafo_correlacao_categorias.png'.")

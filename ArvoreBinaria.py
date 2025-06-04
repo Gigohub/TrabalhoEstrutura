@@ -76,3 +76,5 @@ buscar_predicao(model, X_test, idx=10)
 
 # Ou buscar inserindo valores manualmente:
 # buscar_predicao(model, X_test)
+plot_tree(model, feature_names=X.columns, filled=True, rounded=True, fontsize=8)
+plt.savefig("arvore_completa.png")

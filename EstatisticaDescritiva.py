@@ -1,0 +1,302 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from statsmodels.tsa.seasonal import seasonal_decompose
+# Carregar o dataset
+df = pd.read_csv('energydata_complete.csv')
+
+# Função de estatísticas descritivas
+def estatisticas_descritivas(df):
+    """Calcula estatísticas básicas para variáveis numéricas"""
+    desc = df.describe(percentiles=[.01, .05, .25, .5, .75, .95, .99]).T
+    desc['skewness'] = df.skew()
+    desc['kurtosis'] = df.kurtosis()
+    desc['IQR'] = desc['75%'] - desc['25%']
+    desc['CV'] = desc['std'] / desc['mean']  # Coeficiente de Variação
+    return desc
+
+# Gerar estatísticas
+estatisticas = estatisticas_descritivas(df.select_dtypes(include=[np.number]))
+
+# Configurar a figura
+fig, ax = plt.subplots(figsize=(12, 8))
+ax.axis('off')
+
+# Criar tabela
+table = ax.table(cellText=estatisticas.round(4).values,
+                 colLabels=estatisticas.columns,
+                 rowLabels=estatisticas.index,
+                 cellLoc='center',
+                 loc='center',
+                 colColours=['lightgray']*len(estatisticas.columns),
+                 rowColours=['lightgray']*len(estatisticas.index))
+
+table.auto_set_font_size(False)
+table.set_fontsize(10)
+table.scale(1.2, 1.2)  # Ajustar tamanho
+
+# Salvar como PNG
+plt.savefig('estatisticas_descritivas.png', dpi=300, bbox_inches='tight')
+plt.close()
+
+print("Tabela salva como 'estatisticas_descritivas.png'!")
+
+
+
+
+
+#CORRELAÇÕES VARIAVEIS
+
+
+def plot_correlacao(df, variaveis=None):
+    """Gera um mapa de calor de correlação entre variáveis numéricas"""
+    # Seleciona apenas variáveis numéricas (ou usa as fornecidas)
+    if variaveis:
+        df = df[variaveis]
+    else:
+        df = df.select_dtypes(include=[np.number])
+    
+    # Calcula correlação
+    corr = df.corr()
+    
+    # Configura figura
+    plt.figure(figsize=(12, 10))
+    
+    # Mapa de calor
+    sns.heatmap(corr, 
+                annot=True, 
+                fmt=".2f", 
+                cmap='coolwarm', 
+                center=0,
+                linewidths=0.5)
+    
+    plt.title("Mapa de Correlação entre Variáveis", pad=20, fontsize=16)
+    plt.xticks(rotation=45)
+    plt.yticks(rotation=0)
+    plt.savefig('correlacao_variaveis.png', dpi=300, bbox_inches='tight')
+    plt.close()
+    print("Mapa de correlação salvo como 'correlacao_variaveis.png'")
+
+# Exemplo de uso
+plot_correlacao(df, variaveis=['Appliances', 'T_out', 'RH_out', 'Windspeed', 'lights'])
+
+
+
+
+
+
+
+#ANALISE TEMPORAL
+
+
+def analise_temporal(df, variavel, time_col='date'):
+    """
+    Análise temporal de uma variável com decomposição sazonal
+    
+    Args:
+        df: DataFrame pandas contendo os dados
+        variavel: Nome da coluna a ser analisada
+        time_col: Nome da coluna de tempo (padrão='date')
+    """
+    # Verificar se as colunas existem
+    if time_col not in df.columns:
+        raise ValueError(f"Coluna temporal '{time_col}' não encontrada no DataFrame")
+    if variavel not in df.columns:
+        raise ValueError(f"Variável '{variavel}' não encontrada no DataFrame")
+    
+    # Converter para série temporal
+    ts = df.set_index(time_col)[variavel]
+    
+    # Configurar figura
+    plt.figure(figsize=(15, 12))
+    
+    # 1. Série original e média móvel
+    plt.subplot(311)
+    rolmean = ts.rolling(window=24*7).mean()  # Média semanal
+    plt.plot(ts, label='Original', alpha=0.5)
+    plt.plot(rolmean, label='Média Móvel Semanal', color='red', linewidth=2)
+    plt.legend()
+    plt.title(f'Série Temporal de {variavel}', fontsize=14)
+    plt.grid(True, linestyle='--', alpha=0.7)
+    
+    # 2. Desvio padrão móvel
+    plt.subplot(312)
+    rolstd = ts.rolling(window=24).std()  # Desvio padrão diário
+    plt.plot(rolstd, label='Desvio Padrão Móvel Diário', color='green')
+    plt.legend()
+    plt.grid(True, linestyle='--', alpha=0.7)
+    
+    # 3. Decomposição sazonal
+    try:
+        decomposition = seasonal_decompose(ts.dropna(), period=24)
+        plt.subplot(313)
+        decomposition.trend.plot(color='purple')
+        plt.title('Componente de Tendência', fontsize=14)
+        plt.grid(True, linestyle='--', alpha=0.7)
+    except Exception as e:
+        print(f"Erro na decomposição sazonal: {e}")
+        plt.subplot(313)
+        plt.text(0.5, 0.5, 'Decomposição não disponível', 
+                ha='center', va='center')
+    
+    plt.tight_layout()
+    plt.savefig(f'temporal_{variavel}.png', dpi=300, bbox_inches='tight')
+    plt.close()
+    print(f"Análise temporal salva como 'temporal_{variavel}.png'")
+
+# Exemplo de uso
+analise_temporal(df, 'Appliances')  # Agora usando 'df' em vez de 'data'
+
+
+
+
+
+
+
+#analise de relações entre variaveis
+
+def analise_relacoes(df, target='Appliances'):
+    """
+    Análise de relações entre variáveis com gráficos de dispersão
+    
+    Args:
+        df: DataFrame pandas
+        target: Variável alvo para análise (padrão='Appliances')
+    
+    Returns:
+        Série pandas com correlações
+    """
+    # Verificar se a variável target existe
+    if target not in df.columns:
+        raise ValueError(f"Variável target '{target}' não encontrada no DataFrame")
+    
+    # Calcular correlações
+    corr = df.corr()[target].sort_values(ascending=False)
+    
+    # Filtrar variáveis numéricas e excluir a própria target
+    numeric_vars = df.select_dtypes(include=[np.number]).columns
+    top_corr = corr[numeric_vars].drop(target, errors='ignore').head(10)
+    
+    # Configurar figura
+    plt.figure(figsize=(20, 10))
+    plt.suptitle(f'Relações com a variável alvo: {target}', y=1.02, fontsize=16)
+    
+    # Criar subplots
+    for i, var in enumerate(top_corr.index, 1):
+        plt.subplot(2, 5, i)
+        sns.regplot(x=df[var], y=df[target], 
+                   scatter_kws={'alpha': 0.3, 'color': 'skyblue'},
+                   line_kws={'color': 'red'})
+        plt.title(f'{var}\nCorr: {top_corr[var]:.2f}', pad=10)
+        plt.xlabel('')
+        plt.ylabel('')
+    
+    plt.tight_layout()
+    
+    # Salvar figura
+    output_file = f'relacoes_{target}.png'
+    plt.savefig(output_file, dpi=300, bbox_inches='tight')
+    plt.close()
+    print(f"Análise de relações salva como '{output_file}'")
+    
+    return corr
+
+# Exemplo de uso
+try:
+    correlacoes = analise_relacoes(df)  # Usando df em vez de data
+    print("\nCorrelações encontradas:")
+    print(correlacoes.head(10))
+except Exception as e:
+    print(f"Erro na análise: {str(e)}")
+
+
+
+
+
+ #analise por grupos
+ 
+def analise_grupos_png(df, group_col='is_weekend'):
+    """
+    Gera 3 tipos de visualizações em PNG:
+    1. Boxplot comparativo
+    2. Densidade das distribuições
+    3. Heatmap de correlações por grupo
+    
+    Args:
+        df: DataFrame pandas
+        group_col: Coluna para agrupamento (padrão='is_weekend')
+    """
+    # Configurações
+    group_names = {0: 'Dia Útil', 1: 'Fim de Semana'}
+    variaveis = ['Appliances', 'lights', 'T_out', 'RH_out', 'Windspeed', 'Visibility']
+    
+    # Verificar dados
+    if group_col not in df.columns:
+        raise ValueError(f"Coluna '{group_col}' não encontrada!")
+    
+    # ----------------------------------
+    # 1. Boxplot Comparativo (PNG)
+    # ----------------------------------
+    plt.figure(figsize=(18, 10))
+    for i, var in enumerate(variaveis, 1):
+        plt.subplot(2, 3, i)
+        sns.boxplot(x=group_col, y=var, data=df, palette="viridis", 
+                   showmeans=True, meanprops={"marker":"o", "markerfacecolor":"white", "markeredgecolor":"red"})
+        plt.title(f'Distribuição de {var}', fontsize=12)
+        plt.xticks(ticks=[0, 1], labels=group_names.values())
+        plt.grid(axis='y', linestyle='--', alpha=0.4)
+    
+    plt.suptitle('Comparação entre Grupos - Boxplot', fontsize=16, y=1.02)
+    plt.tight_layout()
+    plt.savefig(f'boxplot_grupos.png', dpi=300, bbox_inches='tight')
+    plt.close()
+    
+    # ----------------------------------
+    # 2. Gráfico de Densidade (PNG)
+    # ----------------------------------
+    plt.figure(figsize=(15, 8))
+    for var in variaveis[:4]:  # Mostrar 4 variáveis para melhor legibilidade
+        for grupo_val, grupo_nome in group_names.items():
+            sns.kdeplot(df[df[group_col] == grupo_val][var], 
+                        label=f'{grupo_nome} - {var}', 
+                        linewidth=2, alpha=0.7)
+    
+    plt.title('Densidade de Distribuição por Grupo', fontsize=16)
+    plt.xlabel('Valores')
+    plt.legend()
+    plt.grid(linestyle='--', alpha=0.3)
+    plt.savefig(f'densidade_grupos.png', dpi=300, bbox_inches='tight')
+    plt.close()
+    
+    # ----------------------------------
+    # 3. Heatmap de Correlações (PNG)
+    # ----------------------------------
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 8))
+    
+    # Heatmap para Dias Úteis
+    corr_util = df[df[group_col] == 0][variaveis].corr()
+    sns.heatmap(corr_util, annot=True, fmt=".2f", cmap="coolwarm", 
+                center=0, ax=ax1, cbar=False)
+    ax1.set_title('Correlações - Dias Úteis', fontsize=14)
+    
+    # Heatmap para Finais de Semana
+    corr_fds = df[df[group_col] == 1][variaveis].corr()
+    sns.heatmap(corr_fds, annot=True, fmt=".2f", cmap="coolwarm", 
+                center=0, ax=ax2)
+    ax2.set_title('Correlações - Finais de Semana', fontsize=14)
+    
+    plt.suptitle('Diferenças nas Correlações entre Grupos', fontsize=16, y=1.02)
+    plt.tight_layout()
+    plt.savefig(f'correlacoes_grupos.png', dpi=300, bbox_inches='tight')
+    plt.close()
+    
+    print("""
+    Arquivos PNG gerados com sucesso:
+    - boxplot_grupos.png
+    - densidade_grupos.png
+    - correlacoes_grupos.png
+    """)
+
+# Exemplo de uso
+analise_grupos_png(df)

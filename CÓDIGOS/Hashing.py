@@ -14,34 +14,85 @@ def hash_row(row):
 # 3. Criar coluna de hash no DataFrame
 df['hash'] = df.apply(hash_row, axis=1)
 
-# 4. Criar a Tabela Hash com detecção de duplicatas
+# 4. Tabela Hash e duplicatas
 hash_table = {}
 duplicates = defaultdict(list)  # Para armazenar duplicatas
 
-for idx, row in df.iterrows():
+def inserir_linha(indice):
+    row = df.loc[indice]
     hash_key = row['hash']
-    
     if hash_key in hash_table:
-        # Já existe: é uma duplicata
-        duplicates[hash_key].append(idx)
+        print(f"⚠️ Linha {indice} já está presente na tabela hash (duplicata).")
+        duplicates[hash_key].append(indice)
     else:
-        # Adiciona à tabela hash
         hash_table[hash_key] = row.to_dict()
+        print(f"✅ Linha {indice} inserida na tabela hash.")
 
-# 5. Exemplo: buscar uma linha
-some_hash = df.loc[0, 'hash']
-result = hash_table.get(some_hash)
+def remover_linha(indice):
+    row = df.loc[indice]
+    hash_key = row['hash']
+    if hash_key in hash_table:
+        del hash_table[hash_key]
+        print(f"✅ Linha {indice} removida da tabela hash.")
+    else:
+        print(f"❌ Linha {indice} não encontrada na tabela hash.")
 
-print(f"🔑 Hash: {some_hash}")
-print(f"📄 Linha correspondente: {result}")
+def buscar_por_indice(indice):
+    row = df.loc[indice]
+    hash_key = row['hash']
+    result = hash_table.get(hash_key)
+    if result:
+        print(f"🔎 Linha encontrada: {result}")
+    else:
+        print("❌ Linha não encontrada na tabela hash.")
 
-# 6. Relatório de duplicatas
-if duplicates:
-    print(f"⚠️ Foram encontradas {len(duplicates)} duplicatas de hash:")
-    for h, idxs in duplicates.items():
-        print(f"Hash: {h}, Linhas duplicadas: {idxs}")
-else:
-    print("✅ Nenhuma duplicata de hash encontrada.")
+def buscar_por_hash(hash_key):
+    result = hash_table.get(hash_key)
+    if result:
+        print(f"🔎 Linha correspondente ao hash {hash_key}: {result}")
+    else:
+        print("❌ Hash não encontrado na tabela hash.")
 
-# 7. Tamanho da tabela hash
-print(f"Tamanho da Tabela Hash: {len(hash_table)}")
+def relatorio_duplicatas():
+    if duplicates:
+        print(f"⚠️ Foram encontradas {len(duplicates)} duplicatas de hash:")
+        for h, idxs in duplicates.items():
+            print(f"Hash: {h}, Linhas duplicadas: {idxs}")
+    else:
+        print("✅ Nenhuma duplicata de hash encontrada.")
+
+# Preenche a tabela hash inicialmente
+for idx, row in df.iterrows():
+    inserir_linha(idx)
+
+print(f"Tamanho inicial da Tabela Hash: {len(hash_table)}")
+
+# Menu interativo
+while True:
+    print("\nOperações disponíveis:")
+    print("1 - Buscar linha por índice")
+    print("2 - Inserir linha por índice")
+    print("3 - Remover linha por índice")
+    print("4 - Buscar linha por hash")
+    print("5 - Relatório de duplicatas")
+    print("0 - Sair")
+    opcao = input("Escolha a operação: ")
+    if opcao == '0':
+        print("Encerrando.")
+        break
+    elif opcao == '1':
+        indice = int(input("Digite o índice da linha: "))
+        buscar_por_indice(indice)
+    elif opcao == '2':
+        indice = int(input("Digite o índice da linha para inserir: "))
+        inserir_linha(indice)
+    elif opcao == '3':
+        indice = int(input("Digite o índice da linha para remover: "))
+        remover_linha(indice)
+    elif opcao == '4':
+        hash_key = input("Digite o hash (em hexadecimal): ")
+        buscar_por_hash(hash_key)
+    elif opcao == '5':
+        relatorio_duplicatas()
+    else:
+        print("Opção inválida. Tente novamente.")

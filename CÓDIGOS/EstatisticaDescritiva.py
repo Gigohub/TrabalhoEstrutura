@@ -3,8 +3,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from statsmodels.tsa.seasonal import seasonal_decompose
+
 # Carregar o dataset
 df = pd.read_csv('energydata_complete.csv')
+
+# Carregar Dados
+data = pd.read_csv('energydata_complete.csv')
+data['date'] = pd.to_datetime(data['date'])
+data['hour'] = data['date'].dt.hour
+data['day_of_week'] = data['date'].dt.dayofweek
+data['is_weekend'] = data['day_of_week'].apply(lambda x: 1 if x >= 5 else 0)
 
 # Função de estatísticas descritivas
 def estatisticas_descritivas(df):
@@ -82,13 +90,7 @@ def plot_correlacao(df, variaveis=None):
 plot_correlacao(df, variaveis=['Appliances', 'T_out', 'RH_out', 'Windspeed', 'lights'])
 
 
-
-
-
-
-
 #ANALISE TEMPORAL
-
 
 def analise_temporal(df, variavel, time_col='date'):
     """

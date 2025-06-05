@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Carregar dados
+# ✅ Carregar dados
 data = pd.read_csv('energydata_complete.csv')
 
 # ✅ Conversão de 'date'
@@ -19,7 +19,7 @@ df_pico = df[(df['date'].dt.hour >= 18) & (df['date'].dt.hour <= 23)]
 # ✅ Ordenar por 'Appliances' (descendente)
 df_pico = df_pico.sort_values(by='Appliances', ascending=False).reset_index(drop=True)
 
-# ✅ Gráfico 1: Evolução Temporal do Consumo ('Appliances')
+# ✅ Gráfico 1: Evolução Temporal do Consumo
 
 plt.figure(figsize=(12, 6))
 plt.plot(df_pico['date'], df_pico['Appliances'], color='tomato', linewidth=1)
@@ -29,7 +29,12 @@ plt.ylabel('Consumo (Wh)')
 plt.xticks(rotation=45)
 plt.grid(True, linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.show()
+
+# ✅ Salvar figura
+plt.savefig('evolucao_temporal_consumo.png')
+print("✅ Gráfico 'evolucao_temporal_consumo.png' salvo com sucesso.")
+
+plt.close()
 
 # ✅ Gráfico 2: Ranking de Consumo - Top 10 maiores valores
 
@@ -43,10 +48,15 @@ plt.ylabel('Consumo (Wh)')
 plt.xticks(rotation=45)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 
-# Adicionar rótulos nos tops
+# ✅ Rótulos
 for bar in bars:
     yval = bar.get_height()
     plt.text(bar.get_x() + bar.get_width()/2, yval + 5, f'{int(yval)}', ha='center', va='bottom', fontsize=8)
 
 plt.tight_layout()
 
+# ✅ Salvar figura
+plt.savefig('ranking_top10_consumo.png')
+print("✅ Gráfico 'ranking_top10_consumo.png' salvo com sucesso.")
+
+plt.close()

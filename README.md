@@ -10,5 +10,5 @@ No trabalho implementamos as estruturas a baixo
 - Grafo
 - Skip List
 - Segment Tree
-- BLoom Filter
+- Bloom Filter
 

@@ -103,3 +103,4 @@ while True:
 
     resultado = bloom.check(valor)
     print(f"Resultado: {'Possivelmente está presente' if resultado else 'Com certeza não está presente'}")
+    

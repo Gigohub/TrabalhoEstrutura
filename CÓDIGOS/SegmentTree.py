@@ -89,3 +89,4 @@ atualizar_valor(col_teste, 5, 100.0)
 consulta_soma(col_teste, 0, 10)
 remover_valor(col_teste, 5)
 consulta_soma(col_teste, 0, 10)
+

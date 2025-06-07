@@ -190,3 +190,5 @@ while True:
 
     # Mostrar Skip List após operação
     skip.displayList()
+
+    

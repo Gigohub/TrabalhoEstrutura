@@ -50,15 +50,30 @@ class SkipList:
                 n.forward[i] = update[i].forward[i]
                 update[i].forward[i] = n
 
-    def searchElement(self, key):
+    def searchElement(self, key, verbose=False):
         current = self.header
+        path = []
         for i in range(self.level, -1, -1):
+            pos = 0
             while current.forward[i] and current.forward[i].key < key:
                 current = current.forward[i]
+                pos += 1
+            path.append((i, pos, current.key if current.key is not None else 'Header'))
         current = current.forward[0]
         if current and current.key == key:
+            if verbose:
+                print(f"\nValor {key} encontrado na lista!")
+                print("Caminho percorrido durante a busca (nível, posição, nó atual):")
+                for lvl, pos, node in path:
+                    print(f"  Nível {lvl}, Posição {pos}, Nó {node}")
             return True
-        return False
+        else:
+            if verbose:
+                print(f"\nValor {key} não encontrado na lista.")
+                print("Caminho percorrido durante a busca (nível, posição, nó atual):")
+                for lvl, pos, node in path:
+                    print(f"  Nível {lvl}, Posição {pos}, Nó {node}")
+            return False
 
     def deleteElement(self, key):
         update = [None] * (self.MAXLVL + 1)
@@ -169,9 +184,9 @@ while True:
         continue
 
     if opcao == '1':
-        encontrado = skip.searchElement(valor)
+        encontrado = skip.searchElement(valor, verbose=True)
         print(f"Busca: {'Encontrado' if encontrado else 'Não encontrado'}")
-
+                        
     elif opcao == '2':
         skip.deleteElement(valor)
 

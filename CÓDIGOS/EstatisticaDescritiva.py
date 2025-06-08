@@ -37,7 +37,7 @@ table = ax.table(
 table.auto_set_font_size(False)
 table.set_fontsize(10)
 table.scale(1.2, 1.2)
-plt.savefig('estatisticas_descritivas.png', dpi=300, bbox_inches='tight')
+plt.savefig('IMAGENS/estatisticas_descritivas.png', dpi=300, bbox_inches='tight')
 plt.close()
 print("Tabela salva como 'estatisticas_descritivas.png'!")
 
@@ -51,7 +51,7 @@ def plot_correlacao(df, variaveis=None):
     plt.title("Mapa de Correlação entre Variáveis", pad=20, fontsize=16)
     plt.xticks(rotation=45)
     plt.yticks(rotation=0)
-    plt.savefig('correlacao_variaveis.png', dpi=300, bbox_inches='tight')
+    plt.savefig('IMAGENS/correlacao_variaveis.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 plot_correlacao(df, variaveis=['Appliances', 'T_out', 'RH_out', 'Windspeed', 'lights'])
@@ -88,7 +88,7 @@ def analise_temporal(df, variavel, time_col='date'):
         plt.subplot(313)
         plt.text(0.5, 0.5, 'Decomposição não disponível', ha='center', va='center')
     plt.tight_layout()
-    plt.savefig(f'temporal_{variavel}.png', dpi=300, bbox_inches='tight')
+    plt.savefig(f'IMAGENS/temporal_{variavel}.png', dpi=300, bbox_inches='tight')
     plt.close()
     print(f"Análise temporal salva como 'temporal_{variavel}.png'")
 
@@ -111,7 +111,7 @@ def analise_relacoes(df, target='Appliances'):
         plt.ylabel('')
     plt.tight_layout()
     output_file = f'relacoes_{target}.png'
-    plt.savefig(output_file, dpi=300, bbox_inches='tight')
+    plt.savefig('IMAGENS/relacoes_Appliances.png', dpi=300, bbox_inches='tight')
     plt.close()
     print(f"Análise de relações salva como '{output_file}'")
     return corr
@@ -140,7 +140,7 @@ def analise_grupos_png(df, group_col='is_weekend'):
         plt.grid(axis='y', linestyle='--', alpha=0.4)
     plt.suptitle('Comparação entre Grupos - Boxplot', fontsize=16, y=1.02)
     plt.tight_layout()
-    plt.savefig(f'boxplot_grupos.png', dpi=300, bbox_inches='tight')
+    plt.savefig(f'IMAGENS/boxplot_grupos.png', dpi=300, bbox_inches='tight')
     plt.close()
     # Densidade
     plt.figure(figsize=(15, 8))
@@ -153,7 +153,7 @@ def analise_grupos_png(df, group_col='is_weekend'):
     plt.xlabel('Valores')
     plt.legend()
     plt.grid(linestyle='--', alpha=0.3)
-    plt.savefig(f'densidade_grupos.png', dpi=300, bbox_inches='tight')
+    plt.savefig(f'IMAGENS/densidade_grupos.png', dpi=300, bbox_inches='tight')
     plt.close()
     # Heatmap de correlação
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 8))
@@ -165,7 +165,7 @@ def analise_grupos_png(df, group_col='is_weekend'):
     ax2.set_title('Correlações - Finais de Semana', fontsize=14)
     plt.suptitle('Diferenças nas Correlações entre Grupos', fontsize=16, y=1.02)
     plt.tight_layout()
-    plt.savefig(f'correlacoes_grupos.png', dpi=300, bbox_inches='tight')
+    plt.savefig(f'IMAGENS/correlacoes_grupos.png', dpi=300, bbox_inches='tight')
     plt.close()
     print("""
     Arquivos PNG gerados com sucesso:

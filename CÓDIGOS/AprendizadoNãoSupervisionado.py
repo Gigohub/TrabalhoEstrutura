@@ -32,7 +32,7 @@ plt.title('Clusters encontrados pelo KMeans (PCA)')
 plt.xlabel('Componente Principal 1')
 plt.ylabel('Componente Principal 2')
 plt.colorbar(label='Cluster')
-plt.savefig("Clusterização.png")
+plt.savefig('IMAGENS/Clusterização.png')
 print("Imagem salva")
 
 # Mostra quantos pontos existem em cada cluster

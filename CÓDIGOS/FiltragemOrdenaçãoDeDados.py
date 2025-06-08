@@ -31,7 +31,7 @@ plt.grid(True, linestyle='--', alpha=0.7)
 plt.tight_layout()
 
 # ✅ Salvar figura
-plt.savefig('evolucao_temporal_consumo.png')
+plt.savefig('IMAGENS/evolucao_temporal_consumo.png')
 print("✅ Gráfico 'evolucao_temporal_consumo.png' salvo com sucesso.")
 
 plt.close()
@@ -56,7 +56,7 @@ for bar in bars:
 plt.tight_layout()
 
 # ✅ Salvar figura
-plt.savefig('ranking_top10_consumo.png')
+plt.savefig('IMAGENS/ranking_top10_consumo.png')
 print("✅ Gráfico 'ranking_top10_consumo.png' salvo com sucesso.")
 
 plt.close()

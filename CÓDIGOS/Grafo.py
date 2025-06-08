@@ -59,7 +59,7 @@ class MeuGrafo:
         nx.draw_networkx_labels(self.G, pos, font_size=8)
         plt.title(title, fontsize=14)
         plt.axis('off')
-        plt.savefig("Grafo.png")
+        plt.savefig('IMAGENS/Grafo.png')
         print("Imagem salva de 'Grafo.png")
 
 # =========================

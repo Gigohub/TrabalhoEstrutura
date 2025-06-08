@@ -35,5 +35,5 @@ for cenario in cenarios_df['cenario'].unique():
     )
 plt.legend()
 plt.tight_layout()
-plt.savefig("simulacao_temperatura_externa.png")  # Salva o gráfico como PNG
-# plt.show()  # Removido para não abrir a janela do gráfico
+plt.savefig("simulacao_temperatura_externa.png") # Salva o gráfico como PNG
+print("Simulação salva no grafico 'simulacao_temperatura_externa.png'")

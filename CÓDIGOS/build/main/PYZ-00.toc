@@ -1,5 +1,8 @@
 ('E:\\VS code\\TrabalhoEstrutura\\CÓDIGOS\\build\\main\\PYZ-00.pyz',
- [('BlomFilter',
+ [('ArvoreBinaria',
+   'E:\\VS code\\TrabalhoEstrutura\\CÓDIGOS\\ArvoreBinaria.py',
+   'PYMODULE'),
+  ('BlomFilter',
    'E:\\VS code\\TrabalhoEstrutura\\CÓDIGOS\\BlomFilter.py',
    'PYMODULE'),
   ('EstatisticaDescritiva',
@@ -318,14 +321,6 @@
   ('_colorize', 'E:\\VS code\\Lib\\_colorize.py', 'PYMODULE'),
   ('_compat_pickle', 'E:\\VS code\\Lib\\_compat_pickle.py', 'PYMODULE'),
   ('_compression', 'E:\\VS code\\Lib\\_compression.py', 'PYMODULE'),
-  ('_distutils_hack',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\_distutils_hack\\__init__.py',
-   'PYMODULE'),
-  ('_distutils_hack.override',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\_distutils_hack\\override.py',
-   'PYMODULE'),
   ('_ios_support', 'E:\\VS code\\Lib\\_ios_support.py', 'PYMODULE'),
   ('_opcode_metadata', 'E:\\VS code\\Lib\\_opcode_metadata.py', 'PYMODULE'),
   ('_py_abc', 'E:\\VS code\\Lib\\_py_abc.py', 'PYMODULE'),
@@ -344,52 +339,7 @@
    'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\PyInstaller\\fake-modules\\_pyi_rth_utils\\tempfile.py',
    'PYMODULE'),
   ('_pyrepl', 'E:\\VS code\\Lib\\_pyrepl\\__init__.py', 'PYMODULE'),
-  ('_pyrepl._minimal_curses',
-   'E:\\VS code\\Lib\\_pyrepl\\_minimal_curses.py',
-   'PYMODULE'),
-  ('_pyrepl._threading_handler',
-   'E:\\VS code\\Lib\\_pyrepl\\_threading_handler.py',
-   'PYMODULE'),
-  ('_pyrepl.base_eventqueue',
-   'E:\\VS code\\Lib\\_pyrepl\\base_eventqueue.py',
-   'PYMODULE'),
-  ('_pyrepl.commands', 'E:\\VS code\\Lib\\_pyrepl\\commands.py', 'PYMODULE'),
-  ('_pyrepl.completing_reader',
-   'E:\\VS code\\Lib\\_pyrepl\\completing_reader.py',
-   'PYMODULE'),
-  ('_pyrepl.console', 'E:\\VS code\\Lib\\_pyrepl\\console.py', 'PYMODULE'),
-  ('_pyrepl.curses', 'E:\\VS code\\Lib\\_pyrepl\\curses.py', 'PYMODULE'),
-  ('_pyrepl.fancy_termios',
-   'E:\\VS code\\Lib\\_pyrepl\\fancy_termios.py',
-   'PYMODULE'),
-  ('_pyrepl.historical_reader',
-   'E:\\VS code\\Lib\\_pyrepl\\historical_reader.py',
-   'PYMODULE'),
-  ('_pyrepl.input', 'E:\\VS code\\Lib\\_pyrepl\\input.py', 'PYMODULE'),
-  ('_pyrepl.keymap', 'E:\\VS code\\Lib\\_pyrepl\\keymap.py', 'PYMODULE'),
-  ('_pyrepl.main', 'E:\\VS code\\Lib\\_pyrepl\\main.py', 'PYMODULE'),
   ('_pyrepl.pager', 'E:\\VS code\\Lib\\_pyrepl\\pager.py', 'PYMODULE'),
-  ('_pyrepl.reader', 'E:\\VS code\\Lib\\_pyrepl\\reader.py', 'PYMODULE'),
-  ('_pyrepl.readline', 'E:\\VS code\\Lib\\_pyrepl\\readline.py', 'PYMODULE'),
-  ('_pyrepl.simple_interact',
-   'E:\\VS code\\Lib\\_pyrepl\\simple_interact.py',
-   'PYMODULE'),
-  ('_pyrepl.trace', 'E:\\VS code\\Lib\\_pyrepl\\trace.py', 'PYMODULE'),
-  ('_pyrepl.types', 'E:\\VS code\\Lib\\_pyrepl\\types.py', 'PYMODULE'),
-  ('_pyrepl.unix_console',
-   'E:\\VS code\\Lib\\_pyrepl\\unix_console.py',
-   'PYMODULE'),
-  ('_pyrepl.unix_eventqueue',
-   'E:\\VS code\\Lib\\_pyrepl\\unix_eventqueue.py',
-   'PYMODULE'),
-  ('_pyrepl.utils', 'E:\\VS code\\Lib\\_pyrepl\\utils.py', 'PYMODULE'),
-  ('_pyrepl.windows_console',
-   'E:\\VS code\\Lib\\_pyrepl\\windows_console.py',
-   'PYMODULE'),
-  ('_pyrepl.windows_eventqueue',
-   'E:\\VS code\\Lib\\_pyrepl\\windows_eventqueue.py',
-   'PYMODULE'),
-  ('_sitebuiltins', 'E:\\VS code\\Lib\\_sitebuiltins.py', 'PYMODULE'),
   ('_strptime', 'E:\\VS code\\Lib\\_strptime.py', 'PYMODULE'),
   ('_threading_local', 'E:\\VS code\\Lib\\_threading_local.py', 'PYMODULE'),
   ('argparse', 'E:\\VS code\\Lib\\argparse.py', 'PYMODULE'),
@@ -456,10 +406,6 @@
   ('asyncio.windows_utils',
    'E:\\VS code\\Lib\\asyncio\\windows_utils.py',
    'PYMODULE'),
-  ('backports',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\__init__.py',
-   'PYMODULE'),
   ('base64', 'E:\\VS code\\Lib\\base64.py', 'PYMODULE'),
   ('bdb', 'E:\\VS code\\Lib\\bdb.py', 'PYMODULE'),
   ('bisect', 'E:\\VS code\\Lib\\bisect.py', 'PYMODULE'),
@@ -498,7 +444,6 @@
   ('concurrent.futures.thread',
    'E:\\VS code\\Lib\\concurrent\\futures\\thread.py',
    'PYMODULE'),
-  ('configparser', 'E:\\VS code\\Lib\\configparser.py', 'PYMODULE'),
   ('contextlib', 'E:\\VS code\\Lib\\contextlib.py', 'PYMODULE'),
   ('contextvars', 'E:\\VS code\\Lib\\contextvars.py', 'PYMODULE'),
   ('contourpy',
@@ -556,8 +501,6 @@
    'PYMODULE'),
   ('ctypes.util', 'E:\\VS code\\Lib\\ctypes\\util.py', 'PYMODULE'),
   ('ctypes.wintypes', 'E:\\VS code\\Lib\\ctypes\\wintypes.py', 'PYMODULE'),
-  ('curses', 'E:\\VS code\\Lib\\curses\\__init__.py', 'PYMODULE'),
-  ('curses.has_key', 'E:\\VS code\\Lib\\curses\\has_key.py', 'PYMODULE'),
   ('cycler',
    'e:\\VS '
    'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\cycler\\__init__.py',
@@ -735,7 +678,180 @@
   ('importlib.util', 'E:\\VS code\\Lib\\importlib\\util.py', 'PYMODULE'),
   ('inspect', 'E:\\VS code\\Lib\\inspect.py', 'PYMODULE'),
   ('ipaddress', 'E:\\VS code\\Lib\\ipaddress.py', 'PYMODULE'),
-  ('jaraco', '-', 'PYMODULE'),
+  ('joblib',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\__init__.py',
+   'PYMODULE'),
+  ('joblib._cloudpickle_wrapper',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\_cloudpickle_wrapper.py',
+   'PYMODULE'),
+  ('joblib._dask',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\_dask.py',
+   'PYMODULE'),
+  ('joblib._memmapping_reducer',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\_memmapping_reducer.py',
+   'PYMODULE'),
+  ('joblib._multiprocessing_helpers',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\_multiprocessing_helpers.py',
+   'PYMODULE'),
+  ('joblib._parallel_backends',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\_parallel_backends.py',
+   'PYMODULE'),
+  ('joblib._store_backends',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\_store_backends.py',
+   'PYMODULE'),
+  ('joblib._utils',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\_utils.py',
+   'PYMODULE'),
+  ('joblib.backports',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\backports.py',
+   'PYMODULE'),
+  ('joblib.compressor',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\compressor.py',
+   'PYMODULE'),
+  ('joblib.disk',
+   'e:\\VS code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\disk.py',
+   'PYMODULE'),
+  ('joblib.executor',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\executor.py',
+   'PYMODULE'),
+  ('joblib.externals',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\__init__.py',
+   'PYMODULE'),
+  ('joblib.externals.cloudpickle',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\cloudpickle\\__init__.py',
+   'PYMODULE'),
+  ('joblib.externals.cloudpickle.cloudpickle',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\cloudpickle\\cloudpickle.py',
+   'PYMODULE'),
+  ('joblib.externals.loky',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\__init__.py',
+   'PYMODULE'),
+  ('joblib.externals.loky._base',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\_base.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\__init__.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend._posix_reduction',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\_posix_reduction.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend._win_reduction',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\_win_reduction.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.context',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\context.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.fork_exec',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\fork_exec.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.popen_loky_posix',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\popen_loky_posix.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.popen_loky_win32',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\popen_loky_win32.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.process',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\process.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.queues',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\queues.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.reduction',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\reduction.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.resource_tracker',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\resource_tracker.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.spawn',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\spawn.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.synchronize',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\synchronize.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.backend.utils',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\backend\\utils.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.cloudpickle_wrapper',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\cloudpickle_wrapper.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.initializers',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\initializers.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.process_executor',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\process_executor.py',
+   'PYMODULE'),
+  ('joblib.externals.loky.reusable_executor',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\externals\\loky\\reusable_executor.py',
+   'PYMODULE'),
+  ('joblib.func_inspect',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\func_inspect.py',
+   'PYMODULE'),
+  ('joblib.hashing',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\hashing.py',
+   'PYMODULE'),
+  ('joblib.logger',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\logger.py',
+   'PYMODULE'),
+  ('joblib.memory',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\memory.py',
+   'PYMODULE'),
+  ('joblib.numpy_pickle',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\numpy_pickle.py',
+   'PYMODULE'),
+  ('joblib.numpy_pickle_compat',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\numpy_pickle_compat.py',
+   'PYMODULE'),
+  ('joblib.numpy_pickle_utils',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\numpy_pickle_utils.py',
+   'PYMODULE'),
+  ('joblib.parallel',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\parallel.py',
+   'PYMODULE'),
+  ('joblib.pool',
+   'e:\\VS code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\joblib\\pool.py',
+   'PYMODULE'),
   ('json', 'E:\\VS code\\Lib\\json\\__init__.py', 'PYMODULE'),
   ('json.decoder', 'E:\\VS code\\Lib\\json\\decoder.py', 'PYMODULE'),
   ('json.encoder', 'E:\\VS code\\Lib\\json\\encoder.py', 'PYMODULE'),
@@ -1226,6 +1342,1138 @@
    'E:\\VS code\\Lib\\multiprocessing\\util.py',
    'PYMODULE'),
   ('netrc', 'E:\\VS code\\Lib\\netrc.py', 'PYMODULE'),
+  ('networkx',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.clique',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\clique.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.clustering_coefficient',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\clustering_coefficient.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.connectivity',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\connectivity.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.density',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\density.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.distance_measures',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\distance_measures.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.dominating_set',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\dominating_set.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.kcomponents',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\kcomponents.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.matching',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\matching.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.maxcut',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\maxcut.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.ramsey',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\ramsey.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.steinertree',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\steinertree.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.traveling_salesman',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\traveling_salesman.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.treewidth',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\treewidth.py',
+   'PYMODULE'),
+  ('networkx.algorithms.approximation.vertex_cover',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\approximation\\vertex_cover.py',
+   'PYMODULE'),
+  ('networkx.algorithms.assortativity',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\assortativity\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.assortativity.connectivity',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\assortativity\\connectivity.py',
+   'PYMODULE'),
+  ('networkx.algorithms.assortativity.correlation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\assortativity\\correlation.py',
+   'PYMODULE'),
+  ('networkx.algorithms.assortativity.mixing',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\assortativity\\mixing.py',
+   'PYMODULE'),
+  ('networkx.algorithms.assortativity.neighbor_degree',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\assortativity\\neighbor_degree.py',
+   'PYMODULE'),
+  ('networkx.algorithms.assortativity.pairs',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\assortativity\\pairs.py',
+   'PYMODULE'),
+  ('networkx.algorithms.asteroidal',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\asteroidal.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.basic',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\basic.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.centrality',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\centrality.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.cluster',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\cluster.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.covering',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\covering.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.edgelist',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\edgelist.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.extendability',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\extendability.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.generators',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\generators.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.link_analysis',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\link_analysis.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.matching',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\matching.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.matrix',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\matrix.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.projection',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\projection.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.redundancy',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\redundancy.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bipartite.spectral',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bipartite\\spectral.py',
+   'PYMODULE'),
+  ('networkx.algorithms.boundary',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\boundary.py',
+   'PYMODULE'),
+  ('networkx.algorithms.bridges',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\bridges.py',
+   'PYMODULE'),
+  ('networkx.algorithms.broadcasting',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\broadcasting.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.betweenness',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\betweenness.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.betweenness_subset',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\betweenness_subset.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.closeness',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\closeness.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.current_flow_betweenness',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\current_flow_betweenness.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.current_flow_betweenness_subset',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\current_flow_betweenness_subset.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.current_flow_closeness',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\current_flow_closeness.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.degree_alg',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\degree_alg.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.dispersion',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\dispersion.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.eigenvector',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\eigenvector.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.flow_matrix',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\flow_matrix.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.group',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\group.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.harmonic',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\harmonic.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.katz',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\katz.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.laplacian',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\laplacian.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.load',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\load.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.percolation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\percolation.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.reaching',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\reaching.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.second_order',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\second_order.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.subgraph_alg',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\subgraph_alg.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.trophic',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\trophic.py',
+   'PYMODULE'),
+  ('networkx.algorithms.centrality.voterank_alg',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\centrality\\voterank_alg.py',
+   'PYMODULE'),
+  ('networkx.algorithms.chains',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\chains.py',
+   'PYMODULE'),
+  ('networkx.algorithms.chordal',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\chordal.py',
+   'PYMODULE'),
+  ('networkx.algorithms.clique',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\clique.py',
+   'PYMODULE'),
+  ('networkx.algorithms.cluster',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\cluster.py',
+   'PYMODULE'),
+  ('networkx.algorithms.coloring',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\coloring\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.coloring.equitable_coloring',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\coloring\\equitable_coloring.py',
+   'PYMODULE'),
+  ('networkx.algorithms.coloring.greedy_coloring',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\coloring\\greedy_coloring.py',
+   'PYMODULE'),
+  ('networkx.algorithms.communicability_alg',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\communicability_alg.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.asyn_fluid',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\asyn_fluid.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.centrality',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\centrality.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.community_utils',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\community_utils.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.divisive',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\divisive.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.kclique',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\kclique.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.kernighan_lin',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\kernighan_lin.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.label_propagation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\label_propagation.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.leiden',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\leiden.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.local',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\local.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.louvain',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\louvain.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.lukes',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\lukes.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.modularity_max',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\modularity_max.py',
+   'PYMODULE'),
+  ('networkx.algorithms.community.quality',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\community\\quality.py',
+   'PYMODULE'),
+  ('networkx.algorithms.components',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\components\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.components.attracting',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\components\\attracting.py',
+   'PYMODULE'),
+  ('networkx.algorithms.components.biconnected',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\components\\biconnected.py',
+   'PYMODULE'),
+  ('networkx.algorithms.components.connected',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\components\\connected.py',
+   'PYMODULE'),
+  ('networkx.algorithms.components.semiconnected',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\components\\semiconnected.py',
+   'PYMODULE'),
+  ('networkx.algorithms.components.strongly_connected',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\components\\strongly_connected.py',
+   'PYMODULE'),
+  ('networkx.algorithms.components.weakly_connected',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\components\\weakly_connected.py',
+   'PYMODULE'),
+  ('networkx.algorithms.connectivity',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.connectivity.connectivity',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\connectivity.py',
+   'PYMODULE'),
+  ('networkx.algorithms.connectivity.cuts',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\cuts.py',
+   'PYMODULE'),
+  ('networkx.algorithms.connectivity.disjoint_paths',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\disjoint_paths.py',
+   'PYMODULE'),
+  ('networkx.algorithms.connectivity.edge_augmentation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\edge_augmentation.py',
+   'PYMODULE'),
+  ('networkx.algorithms.connectivity.edge_kcomponents',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\edge_kcomponents.py',
+   'PYMODULE'),
+  ('networkx.algorithms.connectivity.kcomponents',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\kcomponents.py',
+   'PYMODULE'),
+  ('networkx.algorithms.connectivity.kcutsets',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\kcutsets.py',
+   'PYMODULE'),
+  ('networkx.algorithms.connectivity.stoerwagner',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\stoerwagner.py',
+   'PYMODULE'),
+  ('networkx.algorithms.connectivity.utils',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\utils.py',
+   'PYMODULE'),
+  ('networkx.algorithms.core',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\core.py',
+   'PYMODULE'),
+  ('networkx.algorithms.covering',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\covering.py',
+   'PYMODULE'),
+  ('networkx.algorithms.cuts',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\cuts.py',
+   'PYMODULE'),
+  ('networkx.algorithms.cycles',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\cycles.py',
+   'PYMODULE'),
+  ('networkx.algorithms.d_separation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\d_separation.py',
+   'PYMODULE'),
+  ('networkx.algorithms.dag',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\dag.py',
+   'PYMODULE'),
+  ('networkx.algorithms.distance_measures',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\distance_measures.py',
+   'PYMODULE'),
+  ('networkx.algorithms.distance_regular',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\distance_regular.py',
+   'PYMODULE'),
+  ('networkx.algorithms.dominance',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\dominance.py',
+   'PYMODULE'),
+  ('networkx.algorithms.dominating',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\dominating.py',
+   'PYMODULE'),
+  ('networkx.algorithms.efficiency_measures',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\efficiency_measures.py',
+   'PYMODULE'),
+  ('networkx.algorithms.euler',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\euler.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.boykovkolmogorov',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\boykovkolmogorov.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.capacityscaling',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\capacityscaling.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.dinitz_alg',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\dinitz_alg.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.edmondskarp',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\edmondskarp.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.gomory_hu',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\gomory_hu.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.maxflow',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\maxflow.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.mincost',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\mincost.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.networksimplex',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\networksimplex.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.preflowpush',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\preflowpush.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.shortestaugmentingpath',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\shortestaugmentingpath.py',
+   'PYMODULE'),
+  ('networkx.algorithms.flow.utils',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\flow\\utils.py',
+   'PYMODULE'),
+  ('networkx.algorithms.graph_hashing',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\graph_hashing.py',
+   'PYMODULE'),
+  ('networkx.algorithms.graphical',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\graphical.py',
+   'PYMODULE'),
+  ('networkx.algorithms.hierarchy',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\hierarchy.py',
+   'PYMODULE'),
+  ('networkx.algorithms.hybrid',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\hybrid.py',
+   'PYMODULE'),
+  ('networkx.algorithms.isolate',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isolate.py',
+   'PYMODULE'),
+  ('networkx.algorithms.isomorphism',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isomorphism\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.isomorphism.ismags',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isomorphism\\ismags.py',
+   'PYMODULE'),
+  ('networkx.algorithms.isomorphism.isomorph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isomorphism\\isomorph.py',
+   'PYMODULE'),
+  ('networkx.algorithms.isomorphism.isomorphvf2',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isomorphism\\isomorphvf2.py',
+   'PYMODULE'),
+  ('networkx.algorithms.isomorphism.matchhelpers',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isomorphism\\matchhelpers.py',
+   'PYMODULE'),
+  ('networkx.algorithms.isomorphism.temporalisomorphvf2',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isomorphism\\temporalisomorphvf2.py',
+   'PYMODULE'),
+  ('networkx.algorithms.isomorphism.tree_isomorphism',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isomorphism\\tree_isomorphism.py',
+   'PYMODULE'),
+  ('networkx.algorithms.isomorphism.vf2pp',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isomorphism\\vf2pp.py',
+   'PYMODULE'),
+  ('networkx.algorithms.isomorphism.vf2userfunc',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\isomorphism\\vf2userfunc.py',
+   'PYMODULE'),
+  ('networkx.algorithms.link_analysis',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\link_analysis\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.link_analysis.hits_alg',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\link_analysis\\hits_alg.py',
+   'PYMODULE'),
+  ('networkx.algorithms.link_analysis.pagerank_alg',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\link_analysis\\pagerank_alg.py',
+   'PYMODULE'),
+  ('networkx.algorithms.link_prediction',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\link_prediction.py',
+   'PYMODULE'),
+  ('networkx.algorithms.lowest_common_ancestors',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\lowest_common_ancestors.py',
+   'PYMODULE'),
+  ('networkx.algorithms.matching',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\matching.py',
+   'PYMODULE'),
+  ('networkx.algorithms.minors',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\minors\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.minors.contraction',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\minors\\contraction.py',
+   'PYMODULE'),
+  ('networkx.algorithms.mis',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\mis.py',
+   'PYMODULE'),
+  ('networkx.algorithms.moral',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\moral.py',
+   'PYMODULE'),
+  ('networkx.algorithms.node_classification',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\node_classification.py',
+   'PYMODULE'),
+  ('networkx.algorithms.non_randomness',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\non_randomness.py',
+   'PYMODULE'),
+  ('networkx.algorithms.operators',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\operators\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.operators.all',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\operators\\all.py',
+   'PYMODULE'),
+  ('networkx.algorithms.operators.binary',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\operators\\binary.py',
+   'PYMODULE'),
+  ('networkx.algorithms.operators.product',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\operators\\product.py',
+   'PYMODULE'),
+  ('networkx.algorithms.operators.unary',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\operators\\unary.py',
+   'PYMODULE'),
+  ('networkx.algorithms.planar_drawing',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\planar_drawing.py',
+   'PYMODULE'),
+  ('networkx.algorithms.planarity',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\planarity.py',
+   'PYMODULE'),
+  ('networkx.algorithms.polynomials',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\polynomials.py',
+   'PYMODULE'),
+  ('networkx.algorithms.reciprocity',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\reciprocity.py',
+   'PYMODULE'),
+  ('networkx.algorithms.regular',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\regular.py',
+   'PYMODULE'),
+  ('networkx.algorithms.richclub',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\richclub.py',
+   'PYMODULE'),
+  ('networkx.algorithms.shortest_paths',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\shortest_paths\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.shortest_paths.astar',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\shortest_paths\\astar.py',
+   'PYMODULE'),
+  ('networkx.algorithms.shortest_paths.dense',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\shortest_paths\\dense.py',
+   'PYMODULE'),
+  ('networkx.algorithms.shortest_paths.generic',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\shortest_paths\\generic.py',
+   'PYMODULE'),
+  ('networkx.algorithms.shortest_paths.unweighted',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\shortest_paths\\unweighted.py',
+   'PYMODULE'),
+  ('networkx.algorithms.shortest_paths.weighted',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\shortest_paths\\weighted.py',
+   'PYMODULE'),
+  ('networkx.algorithms.similarity',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\similarity.py',
+   'PYMODULE'),
+  ('networkx.algorithms.simple_paths',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\simple_paths.py',
+   'PYMODULE'),
+  ('networkx.algorithms.smallworld',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\smallworld.py',
+   'PYMODULE'),
+  ('networkx.algorithms.smetric',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\smetric.py',
+   'PYMODULE'),
+  ('networkx.algorithms.sparsifiers',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\sparsifiers.py',
+   'PYMODULE'),
+  ('networkx.algorithms.structuralholes',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\structuralholes.py',
+   'PYMODULE'),
+  ('networkx.algorithms.summarization',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\summarization.py',
+   'PYMODULE'),
+  ('networkx.algorithms.swap',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\swap.py',
+   'PYMODULE'),
+  ('networkx.algorithms.time_dependent',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\time_dependent.py',
+   'PYMODULE'),
+  ('networkx.algorithms.tournament',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tournament.py',
+   'PYMODULE'),
+  ('networkx.algorithms.traversal',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\traversal\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.traversal.beamsearch',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\traversal\\beamsearch.py',
+   'PYMODULE'),
+  ('networkx.algorithms.traversal.breadth_first_search',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\traversal\\breadth_first_search.py',
+   'PYMODULE'),
+  ('networkx.algorithms.traversal.depth_first_search',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\traversal\\depth_first_search.py',
+   'PYMODULE'),
+  ('networkx.algorithms.traversal.edgebfs',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\traversal\\edgebfs.py',
+   'PYMODULE'),
+  ('networkx.algorithms.traversal.edgedfs',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\traversal\\edgedfs.py',
+   'PYMODULE'),
+  ('networkx.algorithms.tree',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tree\\__init__.py',
+   'PYMODULE'),
+  ('networkx.algorithms.tree.branchings',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tree\\branchings.py',
+   'PYMODULE'),
+  ('networkx.algorithms.tree.coding',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tree\\coding.py',
+   'PYMODULE'),
+  ('networkx.algorithms.tree.decomposition',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tree\\decomposition.py',
+   'PYMODULE'),
+  ('networkx.algorithms.tree.mst',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tree\\mst.py',
+   'PYMODULE'),
+  ('networkx.algorithms.tree.operations',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tree\\operations.py',
+   'PYMODULE'),
+  ('networkx.algorithms.tree.recognition',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\tree\\recognition.py',
+   'PYMODULE'),
+  ('networkx.algorithms.triads',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\triads.py',
+   'PYMODULE'),
+  ('networkx.algorithms.vitality',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\vitality.py',
+   'PYMODULE'),
+  ('networkx.algorithms.voronoi',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\voronoi.py',
+   'PYMODULE'),
+  ('networkx.algorithms.walks',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\walks.py',
+   'PYMODULE'),
+  ('networkx.algorithms.wiener',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\algorithms\\wiener.py',
+   'PYMODULE'),
+  ('networkx.classes',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\classes\\__init__.py',
+   'PYMODULE'),
+  ('networkx.classes.coreviews',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\classes\\coreviews.py',
+   'PYMODULE'),
+  ('networkx.classes.digraph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\classes\\digraph.py',
+   'PYMODULE'),
+  ('networkx.classes.filters',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\classes\\filters.py',
+   'PYMODULE'),
+  ('networkx.classes.function',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\classes\\function.py',
+   'PYMODULE'),
+  ('networkx.classes.graph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\classes\\graph.py',
+   'PYMODULE'),
+  ('networkx.classes.graphviews',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\classes\\graphviews.py',
+   'PYMODULE'),
+  ('networkx.classes.multidigraph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\classes\\multidigraph.py',
+   'PYMODULE'),
+  ('networkx.classes.multigraph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\classes\\multigraph.py',
+   'PYMODULE'),
+  ('networkx.classes.reportviews',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\classes\\reportviews.py',
+   'PYMODULE'),
+  ('networkx.convert',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\convert.py',
+   'PYMODULE'),
+  ('networkx.convert_matrix',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\convert_matrix.py',
+   'PYMODULE'),
+  ('networkx.drawing',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\drawing\\__init__.py',
+   'PYMODULE'),
+  ('networkx.drawing.layout',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\drawing\\layout.py',
+   'PYMODULE'),
+  ('networkx.drawing.nx_agraph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\drawing\\nx_agraph.py',
+   'PYMODULE'),
+  ('networkx.drawing.nx_latex',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\drawing\\nx_latex.py',
+   'PYMODULE'),
+  ('networkx.drawing.nx_pydot',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\drawing\\nx_pydot.py',
+   'PYMODULE'),
+  ('networkx.drawing.nx_pylab',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\drawing\\nx_pylab.py',
+   'PYMODULE'),
+  ('networkx.exception',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\exception.py',
+   'PYMODULE'),
+  ('networkx.generators',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\__init__.py',
+   'PYMODULE'),
+  ('networkx.generators.atlas',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\atlas.py',
+   'PYMODULE'),
+  ('networkx.generators.classic',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\classic.py',
+   'PYMODULE'),
+  ('networkx.generators.cographs',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\cographs.py',
+   'PYMODULE'),
+  ('networkx.generators.community',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\community.py',
+   'PYMODULE'),
+  ('networkx.generators.degree_seq',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\degree_seq.py',
+   'PYMODULE'),
+  ('networkx.generators.directed',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\directed.py',
+   'PYMODULE'),
+  ('networkx.generators.duplication',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\duplication.py',
+   'PYMODULE'),
+  ('networkx.generators.ego',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\ego.py',
+   'PYMODULE'),
+  ('networkx.generators.expanders',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\expanders.py',
+   'PYMODULE'),
+  ('networkx.generators.geometric',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\geometric.py',
+   'PYMODULE'),
+  ('networkx.generators.harary_graph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\harary_graph.py',
+   'PYMODULE'),
+  ('networkx.generators.internet_as_graphs',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\internet_as_graphs.py',
+   'PYMODULE'),
+  ('networkx.generators.intersection',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\intersection.py',
+   'PYMODULE'),
+  ('networkx.generators.interval_graph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\interval_graph.py',
+   'PYMODULE'),
+  ('networkx.generators.joint_degree_seq',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\joint_degree_seq.py',
+   'PYMODULE'),
+  ('networkx.generators.lattice',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\lattice.py',
+   'PYMODULE'),
+  ('networkx.generators.line',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\line.py',
+   'PYMODULE'),
+  ('networkx.generators.mycielski',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\mycielski.py',
+   'PYMODULE'),
+  ('networkx.generators.nonisomorphic_trees',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\nonisomorphic_trees.py',
+   'PYMODULE'),
+  ('networkx.generators.random_clustered',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\random_clustered.py',
+   'PYMODULE'),
+  ('networkx.generators.random_graphs',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\random_graphs.py',
+   'PYMODULE'),
+  ('networkx.generators.small',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\small.py',
+   'PYMODULE'),
+  ('networkx.generators.social',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\social.py',
+   'PYMODULE'),
+  ('networkx.generators.spectral_graph_forge',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\spectral_graph_forge.py',
+   'PYMODULE'),
+  ('networkx.generators.stochastic',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\stochastic.py',
+   'PYMODULE'),
+  ('networkx.generators.sudoku',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\sudoku.py',
+   'PYMODULE'),
+  ('networkx.generators.time_series',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\time_series.py',
+   'PYMODULE'),
+  ('networkx.generators.trees',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\trees.py',
+   'PYMODULE'),
+  ('networkx.generators.triads',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\generators\\triads.py',
+   'PYMODULE'),
+  ('networkx.lazy_imports',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\lazy_imports.py',
+   'PYMODULE'),
+  ('networkx.linalg',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\linalg\\__init__.py',
+   'PYMODULE'),
+  ('networkx.linalg.algebraicconnectivity',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\linalg\\algebraicconnectivity.py',
+   'PYMODULE'),
+  ('networkx.linalg.attrmatrix',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\linalg\\attrmatrix.py',
+   'PYMODULE'),
+  ('networkx.linalg.bethehessianmatrix',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\linalg\\bethehessianmatrix.py',
+   'PYMODULE'),
+  ('networkx.linalg.graphmatrix',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\linalg\\graphmatrix.py',
+   'PYMODULE'),
+  ('networkx.linalg.laplacianmatrix',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\linalg\\laplacianmatrix.py',
+   'PYMODULE'),
+  ('networkx.linalg.modularitymatrix',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\linalg\\modularitymatrix.py',
+   'PYMODULE'),
+  ('networkx.linalg.spectrum',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\linalg\\spectrum.py',
+   'PYMODULE'),
+  ('networkx.readwrite',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\__init__.py',
+   'PYMODULE'),
+  ('networkx.readwrite.adjlist',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\adjlist.py',
+   'PYMODULE'),
+  ('networkx.readwrite.edgelist',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\edgelist.py',
+   'PYMODULE'),
+  ('networkx.readwrite.gexf',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\gexf.py',
+   'PYMODULE'),
+  ('networkx.readwrite.gml',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\gml.py',
+   'PYMODULE'),
+  ('networkx.readwrite.graph6',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\graph6.py',
+   'PYMODULE'),
+  ('networkx.readwrite.graphml',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\graphml.py',
+   'PYMODULE'),
+  ('networkx.readwrite.json_graph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\json_graph\\__init__.py',
+   'PYMODULE'),
+  ('networkx.readwrite.json_graph.adjacency',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\json_graph\\adjacency.py',
+   'PYMODULE'),
+  ('networkx.readwrite.json_graph.cytoscape',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\json_graph\\cytoscape.py',
+   'PYMODULE'),
+  ('networkx.readwrite.json_graph.node_link',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\json_graph\\node_link.py',
+   'PYMODULE'),
+  ('networkx.readwrite.json_graph.tree',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\json_graph\\tree.py',
+   'PYMODULE'),
+  ('networkx.readwrite.leda',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\leda.py',
+   'PYMODULE'),
+  ('networkx.readwrite.multiline_adjlist',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\multiline_adjlist.py',
+   'PYMODULE'),
+  ('networkx.readwrite.pajek',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\pajek.py',
+   'PYMODULE'),
+  ('networkx.readwrite.sparse6',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\sparse6.py',
+   'PYMODULE'),
+  ('networkx.readwrite.text',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\readwrite\\text.py',
+   'PYMODULE'),
+  ('networkx.relabel',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\relabel.py',
+   'PYMODULE'),
+  ('networkx.utils',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\utils\\__init__.py',
+   'PYMODULE'),
+  ('networkx.utils.backends',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\utils\\backends.py',
+   'PYMODULE'),
+  ('networkx.utils.configs',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\utils\\configs.py',
+   'PYMODULE'),
+  ('networkx.utils.decorators',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\utils\\decorators.py',
+   'PYMODULE'),
+  ('networkx.utils.heaps',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\utils\\heaps.py',
+   'PYMODULE'),
+  ('networkx.utils.mapped_queue',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\utils\\mapped_queue.py',
+   'PYMODULE'),
+  ('networkx.utils.misc',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\utils\\misc.py',
+   'PYMODULE'),
+  ('networkx.utils.random_sequence',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\utils\\random_sequence.py',
+   'PYMODULE'),
+  ('networkx.utils.rcm',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\utils\\rcm.py',
+   'PYMODULE'),
+  ('networkx.utils.union_find',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\networkx\\utils\\union_find.py',
+   'PYMODULE'),
   ('nturl2path', 'E:\\VS code\\Lib\\nturl2path.py', 'PYMODULE'),
   ('numbers', 'E:\\VS code\\Lib\\numbers.py', 'PYMODULE'),
   ('numpy',
@@ -1444,6 +2692,10 @@
   ('numpy.core._utils',
    'e:\\VS '
    'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\numpy\\core\\_utils.py',
+   'PYMODULE'),
+  ('numpy.core.multiarray',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\numpy\\core\\multiarray.py',
    'PYMODULE'),
   ('numpy.core.numeric',
    'e:\\VS '
@@ -1806,57 +3058,9 @@
    'e:\\VS '
    'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\__init__.py',
    'PYMODULE'),
-  ('packaging._elffile',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\_elffile.py',
-   'PYMODULE'),
-  ('packaging._manylinux',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\_manylinux.py',
-   'PYMODULE'),
-  ('packaging._musllinux',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\_musllinux.py',
-   'PYMODULE'),
-  ('packaging._parser',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\_parser.py',
-   'PYMODULE'),
   ('packaging._structures',
    'e:\\VS '
    'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('packaging._tokenizer',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\_tokenizer.py',
-   'PYMODULE'),
-  ('packaging.licenses',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\licenses\\__init__.py',
-   'PYMODULE'),
-  ('packaging.licenses._spdx',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\licenses\\_spdx.py',
-   'PYMODULE'),
-  ('packaging.markers',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\markers.py',
-   'PYMODULE'),
-  ('packaging.requirements',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\requirements.py',
-   'PYMODULE'),
-  ('packaging.specifiers',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\specifiers.py',
-   'PYMODULE'),
-  ('packaging.tags',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\tags.py',
-   'PYMODULE'),
-  ('packaging.utils',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\packaging\\utils.py',
    'PYMODULE'),
   ('packaging.version',
    'e:\\VS '
@@ -5223,625 +6427,704 @@
    'PYMODULE'),
   ('secrets', 'E:\\VS code\\Lib\\secrets.py', 'PYMODULE'),
   ('selectors', 'E:\\VS code\\Lib\\selectors.py', 'PYMODULE'),
-  ('setuptools',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._core_metadata',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_core_metadata.py',
-   'PYMODULE'),
-  ('setuptools._discovery',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_discovery.py',
-   'PYMODULE'),
-  ('setuptools._distutils',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._distutils._log',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_log.py',
-   'PYMODULE'),
-  ('setuptools._distutils._modified',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_modified.py',
-   'PYMODULE'),
-  ('setuptools._distutils._msvccompiler',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\_msvccompiler.py',
-   'PYMODULE'),
-  ('setuptools._distutils.archive_util',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\archive_util.py',
-   'PYMODULE'),
-  ('setuptools._distutils.ccompiler',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\ccompiler.py',
-   'PYMODULE'),
-  ('setuptools._distutils.cmd',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\cmd.py',
-   'PYMODULE'),
-  ('setuptools._distutils.command',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._distutils.command.bdist',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\bdist.py',
-   'PYMODULE'),
-  ('setuptools._distutils.command.build',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build.py',
-   'PYMODULE'),
-  ('setuptools._distutils.command.build_ext',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_ext.py',
-   'PYMODULE'),
-  ('setuptools._distutils.command.sdist',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\sdist.py',
-   'PYMODULE'),
-  ('setuptools._distutils.compat',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._distutils.compat.numpy',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\numpy.py',
-   'PYMODULE'),
-  ('setuptools._distutils.compat.py39',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\py39.py',
-   'PYMODULE'),
-  ('setuptools._distutils.compilers', '-', 'PYMODULE'),
-  ('setuptools._distutils.compilers.C', '-', 'PYMODULE'),
-  ('setuptools._distutils.compilers.C.base',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\base.py',
-   'PYMODULE'),
-  ('setuptools._distutils.compilers.C.errors',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\errors.py',
-   'PYMODULE'),
-  ('setuptools._distutils.compilers.C.msvc',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\msvc.py',
-   'PYMODULE'),
-  ('setuptools._distutils.core',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\core.py',
-   'PYMODULE'),
-  ('setuptools._distutils.debug',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\debug.py',
-   'PYMODULE'),
-  ('setuptools._distutils.dir_util',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\dir_util.py',
-   'PYMODULE'),
-  ('setuptools._distutils.dist',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\dist.py',
-   'PYMODULE'),
-  ('setuptools._distutils.errors',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\errors.py',
-   'PYMODULE'),
-  ('setuptools._distutils.extension',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\extension.py',
-   'PYMODULE'),
-  ('setuptools._distutils.fancy_getopt',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\fancy_getopt.py',
-   'PYMODULE'),
-  ('setuptools._distutils.file_util',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\file_util.py',
-   'PYMODULE'),
-  ('setuptools._distutils.filelist',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\filelist.py',
-   'PYMODULE'),
-  ('setuptools._distutils.log',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\log.py',
-   'PYMODULE'),
-  ('setuptools._distutils.spawn',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\spawn.py',
-   'PYMODULE'),
-  ('setuptools._distutils.sysconfig',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\sysconfig.py',
-   'PYMODULE'),
-  ('setuptools._distutils.text_file',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\text_file.py',
-   'PYMODULE'),
-  ('setuptools._distutils.util',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\util.py',
-   'PYMODULE'),
-  ('setuptools._distutils.version',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\version.py',
-   'PYMODULE'),
-  ('setuptools._distutils.versionpredicate',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_distutils\\versionpredicate.py',
-   'PYMODULE'),
-  ('setuptools._entry_points',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_entry_points.py',
-   'PYMODULE'),
-  ('setuptools._imp',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_imp.py',
-   'PYMODULE'),
-  ('setuptools._importlib',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_importlib.py',
-   'PYMODULE'),
-  ('setuptools._itertools',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_itertools.py',
-   'PYMODULE'),
-  ('setuptools._normalization',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_normalization.py',
-   'PYMODULE'),
-  ('setuptools._path',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_path.py',
-   'PYMODULE'),
-  ('setuptools._reqs',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_reqs.py',
-   'PYMODULE'),
-  ('setuptools._shutil',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_shutil.py',
-   'PYMODULE'),
-  ('setuptools._static',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_static.py',
-   'PYMODULE'),
-  ('setuptools._vendor', '-', 'PYMODULE'),
-  ('setuptools._vendor.backports',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.backports.tarfile',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.backports.tarfile.compat',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\compat\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.backports.tarfile.compat.py38',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\compat\\py38.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata._adapters',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_adapters.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata._collections',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_collections.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata._compat',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_compat.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata._functools',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_functools.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata._itertools',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_itertools.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata._meta',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_meta.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata._text',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_text.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata.compat',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata.compat.py311',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\py311.py',
-   'PYMODULE'),
-  ('setuptools._vendor.importlib_metadata.compat.py39',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\py39.py',
-   'PYMODULE'),
-  ('setuptools._vendor.jaraco', '-', 'PYMODULE'),
-  ('setuptools._vendor.jaraco.context',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\context.py',
-   'PYMODULE'),
-  ('setuptools._vendor.jaraco.functools',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\functools\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.jaraco.text',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.more_itertools',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.more_itertools.more',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\more.py',
-   'PYMODULE'),
-  ('setuptools._vendor.more_itertools.recipes',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\recipes.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._elffile',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_elffile.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._manylinux',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_manylinux.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._musllinux',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_musllinux.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._parser',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_parser.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._structures',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._tokenizer',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_tokenizer.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.markers',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.requirements',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.specifiers',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.tags',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\tags.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.utils',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.version',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
-   'PYMODULE'),
-  ('setuptools._vendor.tomli',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.tomli._parser',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_parser.py',
-   'PYMODULE'),
-  ('setuptools._vendor.tomli._re',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_re.py',
-   'PYMODULE'),
-  ('setuptools._vendor.tomli._types',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_types.py',
-   'PYMODULE'),
-  ('setuptools._vendor.typing_extensions',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\typing_extensions.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.cli',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.cli.convert',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\convert.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.cli.pack',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\pack.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.cli.tags',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\tags.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.cli.unpack',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\unpack.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.macosx_libfile',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\macosx_libfile.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.metadata',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\metadata.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.util',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\util.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging._elffile',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_elffile.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging._manylinux',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_manylinux.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging._musllinux',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_musllinux.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging._parser',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_parser.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging._structures',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging._tokenizer',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_tokenizer.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging.markers',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\markers.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging.requirements',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\requirements.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging.specifiers',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\specifiers.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging.tags',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\tags.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging.utils',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\utils.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.vendored.packaging.version',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\version.py',
-   'PYMODULE'),
-  ('setuptools._vendor.wheel.wheelfile',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\wheelfile.py',
-   'PYMODULE'),
-  ('setuptools._vendor.zipp',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.zipp.compat',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\compat\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.zipp.compat.py310',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\compat\\py310.py',
-   'PYMODULE'),
-  ('setuptools._vendor.zipp.glob',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\glob.py',
-   'PYMODULE'),
-  ('setuptools.archive_util',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\archive_util.py',
-   'PYMODULE'),
-  ('setuptools.command',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\command\\__init__.py',
-   'PYMODULE'),
-  ('setuptools.command._requirestxt',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\command\\_requirestxt.py',
-   'PYMODULE'),
-  ('setuptools.command.bdist_egg',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\command\\bdist_egg.py',
-   'PYMODULE'),
-  ('setuptools.command.bdist_wheel',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\command\\bdist_wheel.py',
-   'PYMODULE'),
-  ('setuptools.command.build',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\command\\build.py',
-   'PYMODULE'),
-  ('setuptools.command.egg_info',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\command\\egg_info.py',
-   'PYMODULE'),
-  ('setuptools.command.sdist',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\command\\sdist.py',
-   'PYMODULE'),
-  ('setuptools.command.setopt',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\command\\setopt.py',
-   'PYMODULE'),
-  ('setuptools.compat',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\compat\\__init__.py',
-   'PYMODULE'),
-  ('setuptools.compat.py310',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\compat\\py310.py',
-   'PYMODULE'),
-  ('setuptools.compat.py311',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\compat\\py311.py',
-   'PYMODULE'),
-  ('setuptools.compat.py39',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\compat\\py39.py',
-   'PYMODULE'),
-  ('setuptools.config',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\__init__.py',
-   'PYMODULE'),
-  ('setuptools.config._apply_pyprojecttoml',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\_apply_pyprojecttoml.py',
-   'PYMODULE'),
-  ('setuptools.config._validate_pyproject',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\__init__.py',
-   'PYMODULE'),
-  ('setuptools.config._validate_pyproject.error_reporting',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\error_reporting.py',
-   'PYMODULE'),
-  ('setuptools.config._validate_pyproject.extra_validations',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\extra_validations.py',
-   'PYMODULE'),
-  ('setuptools.config._validate_pyproject.fastjsonschema_exceptions',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\fastjsonschema_exceptions.py',
-   'PYMODULE'),
-  ('setuptools.config._validate_pyproject.fastjsonschema_validations',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\fastjsonschema_validations.py',
-   'PYMODULE'),
-  ('setuptools.config._validate_pyproject.formats',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\formats.py',
-   'PYMODULE'),
-  ('setuptools.config.expand',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\expand.py',
-   'PYMODULE'),
-  ('setuptools.config.pyprojecttoml',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\pyprojecttoml.py',
-   'PYMODULE'),
-  ('setuptools.config.setupcfg',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\config\\setupcfg.py',
-   'PYMODULE'),
-  ('setuptools.depends',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\depends.py',
-   'PYMODULE'),
-  ('setuptools.discovery',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\discovery.py',
-   'PYMODULE'),
-  ('setuptools.dist',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\dist.py',
-   'PYMODULE'),
-  ('setuptools.errors',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\errors.py',
-   'PYMODULE'),
-  ('setuptools.extension',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\extension.py',
-   'PYMODULE'),
-  ('setuptools.glob',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\glob.py',
-   'PYMODULE'),
-  ('setuptools.installer',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\installer.py',
-   'PYMODULE'),
-  ('setuptools.logging',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\logging.py',
-   'PYMODULE'),
-  ('setuptools.monkey',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\monkey.py',
-   'PYMODULE'),
-  ('setuptools.msvc',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\msvc.py',
-   'PYMODULE'),
-  ('setuptools.unicode_utils',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\unicode_utils.py',
-   'PYMODULE'),
-  ('setuptools.version',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\version.py',
-   'PYMODULE'),
-  ('setuptools.warnings',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\warnings.py',
-   'PYMODULE'),
-  ('setuptools.wheel',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\wheel.py',
-   'PYMODULE'),
-  ('setuptools.windows_support',
-   'e:\\VS '
-   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\setuptools\\windows_support.py',
-   'PYMODULE'),
   ('shelve', 'E:\\VS code\\Lib\\shelve.py', 'PYMODULE'),
   ('shlex', 'E:\\VS code\\Lib\\shlex.py', 'PYMODULE'),
   ('shutil', 'E:\\VS code\\Lib\\shutil.py', 'PYMODULE'),
   ('signal', 'E:\\VS code\\Lib\\signal.py', 'PYMODULE'),
-  ('site', 'E:\\VS code\\Lib\\site.py', 'PYMODULE'),
   ('six',
    'e:\\VS code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\six.py',
+   'PYMODULE'),
+  ('sklearn',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.__check_build',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\__check_build\\__init__.py',
+   'PYMODULE'),
+  ('sklearn._built_with_meson',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\_built_with_meson.py',
+   'PYMODULE'),
+  ('sklearn._config',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\_config.py',
+   'PYMODULE'),
+  ('sklearn._distributor_init',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\_distributor_init.py',
+   'PYMODULE'),
+  ('sklearn._loss',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\_loss\\__init__.py',
+   'PYMODULE'),
+  ('sklearn._loss.link',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\_loss\\link.py',
+   'PYMODULE'),
+  ('sklearn._loss.loss',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\_loss\\loss.py',
+   'PYMODULE'),
+  ('sklearn.base',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\base.py',
+   'PYMODULE'),
+  ('sklearn.cluster',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.cluster._affinity_propagation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_affinity_propagation.py',
+   'PYMODULE'),
+  ('sklearn.cluster._agglomerative',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_agglomerative.py',
+   'PYMODULE'),
+  ('sklearn.cluster._bicluster',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_bicluster.py',
+   'PYMODULE'),
+  ('sklearn.cluster._birch',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_birch.py',
+   'PYMODULE'),
+  ('sklearn.cluster._bisect_k_means',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_bisect_k_means.py',
+   'PYMODULE'),
+  ('sklearn.cluster._dbscan',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_dbscan.py',
+   'PYMODULE'),
+  ('sklearn.cluster._feature_agglomeration',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_feature_agglomeration.py',
+   'PYMODULE'),
+  ('sklearn.cluster._hdbscan',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.cluster._hdbscan.hdbscan',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_hdbscan\\hdbscan.py',
+   'PYMODULE'),
+  ('sklearn.cluster._kmeans',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_kmeans.py',
+   'PYMODULE'),
+  ('sklearn.cluster._mean_shift',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_mean_shift.py',
+   'PYMODULE'),
+  ('sklearn.cluster._optics',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_optics.py',
+   'PYMODULE'),
+  ('sklearn.cluster._spectral',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\cluster\\_spectral.py',
+   'PYMODULE'),
+  ('sklearn.covariance',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\covariance\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.covariance._elliptic_envelope',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\covariance\\_elliptic_envelope.py',
+   'PYMODULE'),
+  ('sklearn.covariance._empirical_covariance',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\covariance\\_empirical_covariance.py',
+   'PYMODULE'),
+  ('sklearn.covariance._graph_lasso',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\covariance\\_graph_lasso.py',
+   'PYMODULE'),
+  ('sklearn.covariance._robust_covariance',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\covariance\\_robust_covariance.py',
+   'PYMODULE'),
+  ('sklearn.covariance._shrunk_covariance',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\covariance\\_shrunk_covariance.py',
+   'PYMODULE'),
+  ('sklearn.decomposition',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._base',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_base.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._dict_learning',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_dict_learning.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._factor_analysis',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_factor_analysis.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._fastica',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_fastica.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._incremental_pca',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_incremental_pca.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._kernel_pca',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_kernel_pca.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._lda',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_lda.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._nmf',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_nmf.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._pca',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_pca.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._sparse_pca',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_sparse_pca.py',
+   'PYMODULE'),
+  ('sklearn.decomposition._truncated_svd',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\decomposition\\_truncated_svd.py',
+   'PYMODULE'),
+  ('sklearn.discriminant_analysis',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\discriminant_analysis.py',
+   'PYMODULE'),
+  ('sklearn.exceptions',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\exceptions.py',
+   'PYMODULE'),
+  ('sklearn.externals',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\externals\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.externals._packaging',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\externals\\_packaging\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.externals._packaging._structures',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\externals\\_packaging\\_structures.py',
+   'PYMODULE'),
+  ('sklearn.externals._packaging.version',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\externals\\_packaging\\version.py',
+   'PYMODULE'),
+  ('sklearn.externals._scipy',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\externals\\_scipy\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.externals._scipy.sparse',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\externals\\_scipy\\sparse\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.externals._scipy.sparse.csgraph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\externals\\_scipy\\sparse\\csgraph\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.externals._scipy.sparse.csgraph._laplacian',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\externals\\_scipy\\sparse\\csgraph\\_laplacian.py',
+   'PYMODULE'),
+  ('sklearn.gaussian_process',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\gaussian_process\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.gaussian_process._gpc',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\gaussian_process\\_gpc.py',
+   'PYMODULE'),
+  ('sklearn.gaussian_process._gpr',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\gaussian_process\\_gpr.py',
+   'PYMODULE'),
+  ('sklearn.gaussian_process.kernels',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\gaussian_process\\kernels.py',
+   'PYMODULE'),
+  ('sklearn.isotonic',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\isotonic.py',
+   'PYMODULE'),
+  ('sklearn.linear_model',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._base',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_base.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._bayes',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_bayes.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._coordinate_descent',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_coordinate_descent.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._glm',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_glm\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._glm._newton_solver',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_glm\\_newton_solver.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._glm.glm',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_glm\\glm.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._huber',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_huber.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._least_angle',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_least_angle.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._linear_loss',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_linear_loss.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._logistic',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_logistic.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._omp',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_omp.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._passive_aggressive',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_passive_aggressive.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._perceptron',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_perceptron.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._quantile',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_quantile.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._ransac',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_ransac.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._ridge',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_ridge.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._sag',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_sag.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._stochastic_gradient',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_stochastic_gradient.py',
+   'PYMODULE'),
+  ('sklearn.linear_model._theil_sen',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\linear_model\\_theil_sen.py',
+   'PYMODULE'),
+  ('sklearn.manifold',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\manifold\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.manifold._isomap',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\manifold\\_isomap.py',
+   'PYMODULE'),
+  ('sklearn.manifold._locally_linear',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\manifold\\_locally_linear.py',
+   'PYMODULE'),
+  ('sklearn.manifold._mds',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\manifold\\_mds.py',
+   'PYMODULE'),
+  ('sklearn.manifold._spectral_embedding',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\manifold\\_spectral_embedding.py',
+   'PYMODULE'),
+  ('sklearn.manifold._t_sne',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\manifold\\_t_sne.py',
+   'PYMODULE'),
+  ('sklearn.metrics',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.metrics._base',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_base.py',
+   'PYMODULE'),
+  ('sklearn.metrics._classification',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_classification.py',
+   'PYMODULE'),
+  ('sklearn.metrics._pairwise_distances_reduction',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.metrics._pairwise_distances_reduction._dispatcher',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_pairwise_distances_reduction\\_dispatcher.py',
+   'PYMODULE'),
+  ('sklearn.metrics._plot',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_plot\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.metrics._plot.confusion_matrix',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_plot\\confusion_matrix.py',
+   'PYMODULE'),
+  ('sklearn.metrics._plot.det_curve',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_plot\\det_curve.py',
+   'PYMODULE'),
+  ('sklearn.metrics._plot.precision_recall_curve',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_plot\\precision_recall_curve.py',
+   'PYMODULE'),
+  ('sklearn.metrics._plot.regression',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_plot\\regression.py',
+   'PYMODULE'),
+  ('sklearn.metrics._plot.roc_curve',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_plot\\roc_curve.py',
+   'PYMODULE'),
+  ('sklearn.metrics._ranking',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_ranking.py',
+   'PYMODULE'),
+  ('sklearn.metrics._regression',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_regression.py',
+   'PYMODULE'),
+  ('sklearn.metrics._scorer',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\_scorer.py',
+   'PYMODULE'),
+  ('sklearn.metrics.cluster',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.metrics.cluster._bicluster',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\_bicluster.py',
+   'PYMODULE'),
+  ('sklearn.metrics.cluster._supervised',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\_supervised.py',
+   'PYMODULE'),
+  ('sklearn.metrics.cluster._unsupervised',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\cluster\\_unsupervised.py',
+   'PYMODULE'),
+  ('sklearn.metrics.pairwise',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\metrics\\pairwise.py',
+   'PYMODULE'),
+  ('sklearn.model_selection',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\model_selection\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.model_selection._classification_threshold',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\model_selection\\_classification_threshold.py',
+   'PYMODULE'),
+  ('sklearn.model_selection._plot',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\model_selection\\_plot.py',
+   'PYMODULE'),
+  ('sklearn.model_selection._search',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\model_selection\\_search.py',
+   'PYMODULE'),
+  ('sklearn.model_selection._search_successive_halving',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\model_selection\\_search_successive_halving.py',
+   'PYMODULE'),
+  ('sklearn.model_selection._split',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\model_selection\\_split.py',
+   'PYMODULE'),
+  ('sklearn.model_selection._validation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\model_selection\\_validation.py',
+   'PYMODULE'),
+  ('sklearn.multiclass',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\multiclass.py',
+   'PYMODULE'),
+  ('sklearn.neighbors',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.neighbors._base',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\_base.py',
+   'PYMODULE'),
+  ('sklearn.neighbors._classification',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\_classification.py',
+   'PYMODULE'),
+  ('sklearn.neighbors._graph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\_graph.py',
+   'PYMODULE'),
+  ('sklearn.neighbors._kde',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\_kde.py',
+   'PYMODULE'),
+  ('sklearn.neighbors._lof',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\_lof.py',
+   'PYMODULE'),
+  ('sklearn.neighbors._nca',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\_nca.py',
+   'PYMODULE'),
+  ('sklearn.neighbors._nearest_centroid',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\_nearest_centroid.py',
+   'PYMODULE'),
+  ('sklearn.neighbors._regression',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\_regression.py',
+   'PYMODULE'),
+  ('sklearn.neighbors._unsupervised',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\neighbors\\_unsupervised.py',
+   'PYMODULE'),
+  ('sklearn.preprocessing',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.preprocessing._data',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\_data.py',
+   'PYMODULE'),
+  ('sklearn.preprocessing._discretization',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\_discretization.py',
+   'PYMODULE'),
+  ('sklearn.preprocessing._encoders',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\_encoders.py',
+   'PYMODULE'),
+  ('sklearn.preprocessing._function_transformer',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\_function_transformer.py',
+   'PYMODULE'),
+  ('sklearn.preprocessing._label',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\_label.py',
+   'PYMODULE'),
+  ('sklearn.preprocessing._polynomial',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\_polynomial.py',
+   'PYMODULE'),
+  ('sklearn.preprocessing._target_encoder',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\preprocessing\\_target_encoder.py',
+   'PYMODULE'),
+  ('sklearn.svm',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\svm\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.svm._base',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\svm\\_base.py',
+   'PYMODULE'),
+  ('sklearn.svm._bounds',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\svm\\_bounds.py',
+   'PYMODULE'),
+  ('sklearn.svm._classes',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\svm\\_classes.py',
+   'PYMODULE'),
+  ('sklearn.tree',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\tree\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.tree._classes',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\tree\\_classes.py',
+   'PYMODULE'),
+  ('sklearn.tree._export',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\tree\\_export.py',
+   'PYMODULE'),
+  ('sklearn.tree._reingold_tilford',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\tree\\_reingold_tilford.py',
+   'PYMODULE'),
+  ('sklearn.utils',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\__init__.py',
+   'PYMODULE'),
+  ('sklearn.utils._arpack',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_arpack.py',
+   'PYMODULE'),
+  ('sklearn.utils._array_api',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_array_api.py',
+   'PYMODULE'),
+  ('sklearn.utils._available_if',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_available_if.py',
+   'PYMODULE'),
+  ('sklearn.utils._bunch',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_bunch.py',
+   'PYMODULE'),
+  ('sklearn.utils._chunking',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_chunking.py',
+   'PYMODULE'),
+  ('sklearn.utils._encode',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_encode.py',
+   'PYMODULE'),
+  ('sklearn.utils._estimator_html_repr',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_estimator_html_repr.py',
+   'PYMODULE'),
+  ('sklearn.utils._indexing',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_indexing.py',
+   'PYMODULE'),
+  ('sklearn.utils._joblib',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_joblib.py',
+   'PYMODULE'),
+  ('sklearn.utils._mask',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_mask.py',
+   'PYMODULE'),
+  ('sklearn.utils._metadata_requests',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_metadata_requests.py',
+   'PYMODULE'),
+  ('sklearn.utils._missing',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_missing.py',
+   'PYMODULE'),
+  ('sklearn.utils._optional_dependencies',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_optional_dependencies.py',
+   'PYMODULE'),
+  ('sklearn.utils._param_validation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_param_validation.py',
+   'PYMODULE'),
+  ('sklearn.utils._plotting',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_plotting.py',
+   'PYMODULE'),
+  ('sklearn.utils._pprint',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_pprint.py',
+   'PYMODULE'),
+  ('sklearn.utils._response',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_response.py',
+   'PYMODULE'),
+  ('sklearn.utils._set_output',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_set_output.py',
+   'PYMODULE'),
+  ('sklearn.utils._show_versions',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_show_versions.py',
+   'PYMODULE'),
+  ('sklearn.utils._tags',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_tags.py',
+   'PYMODULE'),
+  ('sklearn.utils._testing',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_testing.py',
+   'PYMODULE'),
+  ('sklearn.utils._unique',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\_unique.py',
+   'PYMODULE'),
+  ('sklearn.utils.class_weight',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\class_weight.py',
+   'PYMODULE'),
+  ('sklearn.utils.deprecation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\deprecation.py',
+   'PYMODULE'),
+  ('sklearn.utils.discovery',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\discovery.py',
+   'PYMODULE'),
+  ('sklearn.utils.extmath',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\extmath.py',
+   'PYMODULE'),
+  ('sklearn.utils.fixes',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\fixes.py',
+   'PYMODULE'),
+  ('sklearn.utils.graph',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\graph.py',
+   'PYMODULE'),
+  ('sklearn.utils.metadata_routing',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\metadata_routing.py',
+   'PYMODULE'),
+  ('sklearn.utils.metaestimators',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\metaestimators.py',
+   'PYMODULE'),
+  ('sklearn.utils.multiclass',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\multiclass.py',
+   'PYMODULE'),
+  ('sklearn.utils.optimize',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\optimize.py',
+   'PYMODULE'),
+  ('sklearn.utils.parallel',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\parallel.py',
+   'PYMODULE'),
+  ('sklearn.utils.random',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\random.py',
+   'PYMODULE'),
+  ('sklearn.utils.sparsefuncs',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\sparsefuncs.py',
+   'PYMODULE'),
+  ('sklearn.utils.stats',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\stats.py',
+   'PYMODULE'),
+  ('sklearn.utils.validation',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\sklearn\\utils\\validation.py',
    'PYMODULE'),
   ('socket', 'E:\\VS code\\Lib\\socket.py', 'PYMODULE'),
   ('socketserver', 'E:\\VS code\\Lib\\socketserver.py', 'PYMODULE'),
@@ -6686,13 +7969,13 @@
   ('timeit', 'E:\\VS code\\Lib\\timeit.py', 'PYMODULE'),
   ('token', 'E:\\VS code\\Lib\\token.py', 'PYMODULE'),
   ('tokenize', 'E:\\VS code\\Lib\\tokenize.py', 'PYMODULE'),
-  ('tomllib', 'E:\\VS code\\Lib\\tomllib\\__init__.py', 'PYMODULE'),
-  ('tomllib._parser', 'E:\\VS code\\Lib\\tomllib\\_parser.py', 'PYMODULE'),
-  ('tomllib._re', 'E:\\VS code\\Lib\\tomllib\\_re.py', 'PYMODULE'),
-  ('tomllib._types', 'E:\\VS code\\Lib\\tomllib\\_types.py', 'PYMODULE'),
   ('tracemalloc', 'E:\\VS code\\Lib\\tracemalloc.py', 'PYMODULE'),
   ('tty', 'E:\\VS code\\Lib\\tty.py', 'PYMODULE'),
   ('typing', 'E:\\VS code\\Lib\\typing.py', 'PYMODULE'),
+  ('typing_extensions',
+   'e:\\VS '
+   'code\\TrabalhoEstrutura\\.venv\\Lib\\site-packages\\typing_extensions.py',
+   'PYMODULE'),
   ('unittest', 'E:\\VS code\\Lib\\unittest\\__init__.py', 'PYMODULE'),
   ('unittest._log', 'E:\\VS code\\Lib\\unittest\\_log.py', 'PYMODULE'),
   ('unittest.async_case',
@@ -6701,7 +7984,6 @@
   ('unittest.case', 'E:\\VS code\\Lib\\unittest\\case.py', 'PYMODULE'),
   ('unittest.loader', 'E:\\VS code\\Lib\\unittest\\loader.py', 'PYMODULE'),
   ('unittest.main', 'E:\\VS code\\Lib\\unittest\\main.py', 'PYMODULE'),
-  ('unittest.mock', 'E:\\VS code\\Lib\\unittest\\mock.py', 'PYMODULE'),
   ('unittest.result', 'E:\\VS code\\Lib\\unittest\\result.py', 'PYMODULE'),
   ('unittest.runner', 'E:\\VS code\\Lib\\unittest\\runner.py', 'PYMODULE'),
   ('unittest.signals', 'E:\\VS code\\Lib\\unittest\\signals.py', 'PYMODULE'),

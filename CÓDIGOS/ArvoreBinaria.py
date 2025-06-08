@@ -85,7 +85,7 @@ def remover_amostra(X_train, y_train):
 def visualizar_arvore(model, filename="arvore_interativa.png"):
     plt.figure(figsize=(20, 10))
     plot_tree(model, feature_names=X.columns, filled=True, rounded=True, fontsize=8)
-    plt.savefig('IMAGENS/{filename}')
+    plt.savefig('IMAGENS/arvore_interativa.png')
     plt.close()
     print(f"✅ Árvore de decisão salva como '{filename}'.")
 

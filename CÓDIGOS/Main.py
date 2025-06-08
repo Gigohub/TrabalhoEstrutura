@@ -31,7 +31,7 @@ if __name__ == "__main__":
         elif opcao == "6":
             import SegmentTree
         elif opcao == "7":
-            import CÓDIGOS.ArvoreBinaria as ArvoreBinaria
+            import ArvoreBinaria
         else:
             print("Opção inválida.")
 

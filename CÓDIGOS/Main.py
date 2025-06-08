@@ -25,7 +25,7 @@ if __name__ == "__main__":
         elif opcao == "3":
             import Hashing
         elif opcao == "4":
-            import BlomFilter
+            import CÓDIGOS.BloomFilter as BloomFilter
         elif opcao == "5":
             import SkipList
         elif opcao == "6":

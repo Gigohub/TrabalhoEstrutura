@@ -81,45 +81,42 @@ class CuckooHashTable:
     def count_filled(self):
         return sum(1 for slot in self.table1 if slot is not None) + sum(1 for slot in self.table2 if slot is not None)
 
+# ==================
+# Teste de colisão e exemplo de uso
 
-if __name__ == "__main__":
-    # ==================
-    # Teste de colisão e exemplo de uso
+df = pd.read_csv('energydata_complete.csv')
+def hash_row(row):
+    row_str = ','.join(map(str, row.values))
+    return hashlib.sha256(row_str.encode('utf-8')).hexdigest()
 
-    df = pd.read_csv('energydata_complete.csv')
-    def hash_row(row):
-        row_str = ','.join(map(str, row.values))
-        return hashlib.sha256(row_str.encode('utf-8')).hexdigest()
+df['hash'] = df.apply(hash_row, axis=1)
+keys = df['hash'].values
+values = df.to_dict(orient='records')
+tamanho_tabela = 2 * len(keys)
+cuckoo = CuckooHashTable(size=tamanho_tabela)
 
-    df['hash'] = df.apply(hash_row, axis=1)
-    keys = df['hash'].values
-    values = df.to_dict(orient='records')
+# Inserção
+for k, v in zip(keys, values):
+    assert cuckoo.insert(k, v), "Falha ao inserir (provavelmente tabela pequena demais)"
 
-    tamanho_tabela = 2 * len(keys)
-    cuckoo = CuckooHashTable(size=tamanho_tabela)
+# Verificação de colisão
+assert not cuckoo.has_collision(), "Foi detectada colisão na tabela cuckoo!"
 
-    # Inserção
-    for k, v in zip(keys, values):
-        assert cuckoo.insert(k, v), "Falha ao inserir (provavelmente tabela pequena demais)"
+print(f"Total de chaves: {len(keys)}")
+print(f"Total de slots ocupados: {cuckoo.count_filled()}")
+print(f"Inserções que falharam (max_kicks): {cuckoo.insert_failures}")
+print("✅ Nenhuma colisão detectada: Cuckoo Hashing distribuiu todas as chaves sem colisão.")
 
-    # Verificação de colisão
-    assert not cuckoo.has_collision(), "Foi detectada colisão na tabela cuckoo!"
+# Exemplo de busca
+idx = np.random.randint(0, len(keys))
+test_key = keys[idx]
+print("\nBusca por hash:", test_key)
+result = cuckoo.search(test_key)
+if result:
+    print("Encontrado:", result)
+else:
+    print("Não encontrado.")
 
-    print(f"Total de chaves: {len(keys)}")
-    print(f"Total de slots ocupados: {cuckoo.count_filled()}")
-    print(f"Inserções que falharam (max_kicks): {cuckoo.insert_failures}")
-    print("✅ Nenhuma colisão detectada: Cuckoo Hashing distribuiu todas as chaves sem colisão.")
-
-    # Exemplo de busca
-    idx = np.random.randint(0, len(keys))
-    test_key = keys[idx]
-    print("\nBusca por hash:", test_key)
-    result = cuckoo.search(test_key)
-    if result:
-        print("Encontrado:", result)
-    else:
-        print("Não encontrado.")
-
-    # Exemplo de remoção
-    cuckoo.remove(test_key)
-    print("Após remoção:", cuckoo.search(test_key))
+# Exemplo de remoção
+cuckoo.remove(test_key)
+print("Após remoção:", cuckoo.search(test_key))

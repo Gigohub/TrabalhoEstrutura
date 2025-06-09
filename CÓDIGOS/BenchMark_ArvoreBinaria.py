@@ -78,6 +78,3 @@ def benchmark_arvore_binaria():
         print(f"Tempo de remoção (re-treino): {tempo_remocao:.4f} s")
         print(f"Uso de memória: {current/1024:.2f} KB (atual), {peak/1024:.2f} KB (pico)")
         print(f"Latência média (ins+busca+rem): {latencia_media:.4f} s")
-
-if __name__ == "__main__":
-    benchmark_arvore_binaria()

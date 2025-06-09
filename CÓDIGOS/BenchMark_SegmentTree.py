@@ -90,6 +90,3 @@ def benchmark_segment_tree():
         cur, pk = tracemalloc.get_traced_memory()
         tracemalloc.stop()
         print(f"{n_test} elementos: Construção = {tempo_build:.6f} s, Memória = {cur/1024:.2f} KB (pico {pk/1024:.2f} KB)")
-
-if __name__ == "__main__":
-    benchmark_segment_tree()

@@ -126,6 +126,3 @@ def benchmark_grafo():
         mem, mem_peak = tracemalloc.get_traced_memory()
         tracemalloc.stop()
         print(f"{n_feat} variáveis: Inserção = {t:.6f} s, Memória = {mem/1024:.2f} KB (pico {mem_peak/1024:.2f} KB), Nós = {G_small.number_of_nodes()}, Arestas = {G_small.number_of_edges()}")
-
-if __name__ == "__main__":
-    benchmark_grafo()

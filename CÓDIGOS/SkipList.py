@@ -39,7 +39,6 @@ class SkipList:
 
         if current is None or current.key != key:  # evitar repetidos
             rlevel = self.randomLevel()
-
             if rlevel > self.level:
                 for i in range(self.level + 1, rlevel + 1):
                     update[i] = self.header
@@ -62,17 +61,11 @@ class SkipList:
         current = current.forward[0]
         if current and current.key == key:
             if verbose:
-                print(f"\nValor {key} encontrado na lista!")
-                print("Caminho percorrido durante a busca (nível, posição, nó atual):")
-                for lvl, pos, node in path:
-                    print(f"  Nível {lvl}, Posição {pos}, Nó {node}")
+                pass  # Retirado o print
             return True
         else:
             if verbose:
-                print(f"\nValor {key} não encontrado na lista.")
-                print("Caminho percorrido durante a busca (nível, posição, nó atual):")
-                for lvl, pos, node in path:
-                    print(f"  Nível {lvl}, Posição {pos}, Nó {node}")
+                pass  # Retirado o print
             return False
 
     def deleteElement(self, key):
@@ -94,34 +87,29 @@ class SkipList:
 
             while self.level > 0 and self.header.forward[self.level] is None:
                 self.level -= 1
-            print(f"Elemento {key} removido com sucesso.")
+            # Removido o print
         else:
-            print(f"Elemento {key} não encontrado para remoção.")
+            # Removido o print
+            pass
 
     def updateElement(self, old_key, new_key):
         if self.searchElement(old_key):
             self.deleteElement(old_key)
             self.insertElement(new_key)
-            print(f"Elemento {old_key} atualizado para {new_key}.")
+            # Removido o print
         else:
-            print(f"Elemento {old_key} não encontrado para atualização.")
+            # Removido o print
+            pass
 
     def displayList(self):
-        print("\n***** Skip List ******")
-        for lvl in range(self.level + 1):
-            print(f"Nível {lvl}: ", end=" ")
-            node = self.header.forward[lvl]
-            while node:
-                print(node.key, end=" ")
-                node = node.forward[lvl]
-            print("")
+        # Removido o print da Skip List
+        pass
 
 # ----------------------------
 # Carregando o dataset real
 
 try:
     df = pd.read_csv('energydata_complete.csv')
-    print("Dataset carregado com sucesso.")
 except FileNotFoundError:
     print("Arquivo 'energydata_complete.csv' não encontrado. Verifique o caminho e tente novamente.")
     exit()
@@ -129,21 +117,15 @@ except FileNotFoundError:
 # Selecionar colunas numéricas (int64 e float64)
 colunas_numericas = df.select_dtypes(include=['float64', 'int64']).columns
 
-print("\nColunas numéricas detectadas:")
-for c in colunas_numericas:
-    print(f"- {c} (tipo: {df[c].dtype})")
-
 # Criar Skip List para cada coluna numérica
 skip_lists = {}
 
 for coluna in colunas_numericas:
-    print(f"\nCriando Skip List para a coluna: {coluna}")
     skip_list = SkipList(max_lvl=4, P=0.5)
     valores = df[coluna].dropna().unique()
     for valor in valores:
         skip_list.insertElement(valor)
     skip_lists[coluna] = skip_list
-    skip_list.displayList()
 
 # Interação para testar operações em uma coluna específica
 col_teste = input("\nDigite o nome da coluna para testar buscas e atualizações: ")
@@ -160,7 +142,6 @@ while True:
     print("2 - Remover valor")
     print("3 - Inserir valor")
     print("4 - Atualizar valor")
-    print("5 - Mostrar Skip List")
     print("0 - Sair")
     opcao = input("Escolha a operação: ")
 
@@ -170,10 +151,6 @@ while True:
 
     if opcao not in ['1','2','3','4','5']:
         print("Opção inválida. Tente novamente.")
-        continue
-
-    if opcao == '5':
-        skip.displayList()
         continue
 
     valor = input("Digite o valor (numérico): ")
@@ -192,7 +169,6 @@ while True:
 
     elif opcao == '3':
         skip.insertElement(valor)
-        print(f"Valor {valor} inserido.")
 
     elif opcao == '4':
         valor_novo = input("Digite o novo valor para atualização: ")
@@ -203,7 +179,5 @@ while True:
             continue
         skip.updateElement(valor, valor_novo)
 
-    # Mostrar Skip List após operação
+    # Mostrar Skip List após operação (não haverá saída)
     skip.displayList()
-
-    

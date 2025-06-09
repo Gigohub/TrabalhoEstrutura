@@ -117,6 +117,3 @@ def benchmark_hashing():
                 hash_table_test[hash_key] = row.to_dict()
         t = time.perf_counter() - start
         print(f"{n_test} elementos: Inserção = {t:.6f} s, Colisões = {colisoes_test}, Taxa = {colisoes_test/n_test:.4%}")
-    
-if __name__ == "__main__":
-    benchmark_hashing()

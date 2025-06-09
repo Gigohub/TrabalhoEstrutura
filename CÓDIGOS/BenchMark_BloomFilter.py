@@ -112,6 +112,3 @@ def benchmark_bloom_filter():
         bloom.check(val)
         latencias.append(time.perf_counter() - start)
     print(f"Latência média (ins + busca): {np.mean(latencias)*1000:.4f} ms")
-
-if __name__ == "__main__":
-    benchmark_bloom_filter()
